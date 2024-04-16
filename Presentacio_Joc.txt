@@ -1,9 +1,10 @@
-És un joc de persecució en vista isomètrica. 
+És un joc de persecució en vista isomètrica, només es veu el voltant.
 Volem crear dos modes de joc: un per un jugador i un altre per dos jugadors simultànis.
 En el jugador únic pots ser el perseguit o el perseguidor i volem donar la possibilitat de jugar en diferents nivells de dificultat.
 En el cas de dos jugadors simultànis poden escollir entre ells qui pren cada rol.
 Hi ha diferent mapes i tots estan envoltats pel mar que serveix per delimitar-lo.
 Si estàs perseguint has d'atrapar el lladre abans que entri en un garatge, i si ets el lladre has d'arribar al garatge abans de ser atrapat.
+En l'inici es veu un cotxe de policia aturat en un semafor. li passa un cotxe esportiu a tota velocitat pel davant encen les sirenes i el persegueix. Hi ha una compta enrrera hi es transfereixen els controls al jugador.
 EXTRA:També voldríem afegir NPCs per tal d'augmentar la dificultat del joc.
 
 CALENDARI:
