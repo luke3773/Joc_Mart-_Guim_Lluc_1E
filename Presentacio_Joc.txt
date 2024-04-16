@@ -5,6 +5,9 @@ En el cas de dos jugadors simultànis poden escollir entre ells qui pren cada ro
 Hi ha diferent mapes i tots estan envoltats pel mar que serveix per delimitar-lo.
 Si estàs perseguint has d'atrapar el lladre abans que entri en un garatge, i si ets el lladre has d'arribar al garatge abans de ser atrapat.
 En l'inici es veu un cotxe de policia aturat en un semafor. li passa un cotxe esportiu a tota velocitat pel davant encen les sirenes i el persegueix. Hi ha una compta enrrera hi es transfereixen els controls al jugador.
+Hi ha power ups que augmentes o disminueixen la velocitat (oli, nitro, fang...)
+Mitjançant una fletxa el perseguit sap on està el seu destí que es un garatge.
+Quan s'allunyen molt els jugadors es fa un zoom out perque capiguen tots a la pantalla i el perseguidor va més rapid per compensar, també hi ha més obstacles pel perseguit.
 EXTRA:També voldríem afegir NPCs per tal d'augmentar la dificultat del joc.
 
 CALENDARI:
