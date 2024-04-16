@@ -1,0 +1,16 @@
+És un joc de persecució en vista isomètrica. 
+Volem crear dos modes de joc: un per un jugador i un altre per dos jugadors simultànis.
+En el jugador únic pots ser el perseguit o el perseguidor i volem donar la possibilitat de jugar en diferents nivells de dificultat.
+En el cas de dos jugadors simultànis poden escollir entre ells qui pren cada rol.
+Hi ha diferent mapes i tots estan envoltats pel mar que serveix per delimitar-lo.
+Si estàs perseguint has d'atrapar el lladre abans que entri en un garatge, i si ets el lladre has d'arribar al garatge abans de ser atrapat.
+EXTRA:També voldríem afegir NPCs per tal d'augmentar la dificultat del joc.
+
+CALENDARI:
+-Pas 1: Fer un mapa de prova/exemple
+-Pas 2: Crear el jugador principal (el que controla el jugador)
+-Pas 3: Crear el jugador governat per la màquina
+-Pas 4: Crear els mapes finals
+-Pas 5: Crear l'interfície d'usuari
+-Pas 6: Afegir l'opció de dos jugadors
+-Pas 7: Acabar d'afegir detalls extres
