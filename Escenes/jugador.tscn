@@ -1,5 +1,9 @@
-[gd_scene format=3 uid="uid://qu8y3g660l8f"]
+[gd_scene load_steps=2 format=3 uid="uid://qu8y3g660l8f"]
+
+[ext_resource type="Texture2D" uid="uid://dhb7jkf4f4ql1" path="res://imatges/Police/police_E.png" id="1_es1w4"]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(88, 1)
+texture = ExtResource("1_es1w4")
