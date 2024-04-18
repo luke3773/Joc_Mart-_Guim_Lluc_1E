@@ -12,10 +12,10 @@ func _ready():
 	pass
 	
 func _process(delta):
-	if Input.is_action_pressed("mou_dreta") and angle <= max_angle:
+	if Input.is_action_pressed("dreta") and angle <= max_angle:
 		angle += 0.001
 		
-	if Input.is_action_pressed("mou_esquerra") and angle >= max_angle * -1:
+	if Input.is_action_pressed("esquerra") and angle >= max_angle * -1:
 		angle -= 0.001
 		
 	if Input.is_action_pressed("accelerar") and vel <= max_vel:
