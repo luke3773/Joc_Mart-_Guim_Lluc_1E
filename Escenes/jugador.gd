@@ -1,28 +1,31 @@
 extends CharacterBody2D
 
+const max_vel = 500
+var vel = 0
+const max_angle = 0.04
+var angle = 0
+var direccio = Vector2(1, 1)
+#var resolucio = get_tree().root.content_scale_size
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
-
-# Get the gravity from the project settings to be synced with RigidBody nodes.
-var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-
-
-func _physics_process(delta):
-	# Add the gravity.
-	if not is_on_floor():
-		velocity.y += gravity * delta
-
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
-
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction = Input.get_axis("ui_left", "ui_right")
-	if direction:
-		velocity.x = direction * SPEED
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-
+func _ready():
+	#position = Vector2(resolucio.x / 2, resolucio.y / 2)
+	pass
+	
+func _process(delta):
+	if Input.is_action_pressed("mou_dreta") and angle <= max_angle:
+		angle += 0.001
+		
+	if Input.is_action_pressed("mou_esquerra") and angle >= max_angle * -1:
+		angle -= 0.001
+		
+	if Input.is_action_pressed("accelerar") and vel <= max_vel:
+		vel += 5
+		
+	if Input.is_action_pressed("accelerar") == false and vel > 0:
+		vel -= 5
+	
+	direccio = direccio.rotated(angle)
+	velocity = direccio * vel
 	move_and_slide()
+
+	rotation = direccio.angle() - PI / 2
