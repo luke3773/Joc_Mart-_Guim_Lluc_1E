@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://qu8y3g660l8f"]
+[gd_scene load_steps=4 format=3 uid="uid://qu8y3g660l8f"]
 
 [ext_resource type="Texture2D" uid="uid://dhb7jkf4f4ql1" path="res://imatges/Police/police_E.png" id="1_es1w4"]
 [ext_resource type="Script" path="res://Escenes/jugador.gd" id="1_mk3jy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x4p0f"]
+size = Vector2(29, 24)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_mk3jy")
@@ -11,3 +14,5 @@ position = Vector2(88, 1)
 texture = ExtResource("1_es1w4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(87.5, 0)
+shape = SubResource("RectangleShape2D_x4p0f")
