@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://qu8y3g660l8f"]
+[gd_scene load_steps=9 format=3 uid="uid://qu8y3g660l8f"]
 
 [ext_resource type="Script" path="res://Escenes/jugador.gd" id="1_mk3jy"]
 [ext_resource type="Texture2D" uid="uid://54l05wvw22hf" path="res://imatges/Police/police_SE.png" id="2_twrih"]
@@ -43,6 +43,15 @@ _data = {
 "SE": SubResource("Animation_uj0bo")
 }
 
+[sub_resource type="Animation" id="Animation_2sds1"]
+resource_name = "S"
+length = 0.001
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0q78a"]
+_data = {
+"S": SubResource("Animation_2sds1")
+}
+
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_mk3jy")
 
@@ -57,4 +66,9 @@ shape = SubResource("RectangleShape2D_x4p0f")
 [node name="SE" type="AnimationPlayer" parent="animacions"]
 libraries = {
 "": SubResource("AnimationLibrary_ijw63")
+}
+
+[node name="S" type="AnimationPlayer" parent="animacions"]
+libraries = {
+"": SubResource("AnimationLibrary_0q78a")
 }
