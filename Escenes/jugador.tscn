@@ -1,9 +1,14 @@
-[gd_scene load_steps=15 format=3 uid="uid://qu8y3g660l8f"]
+[gd_scene load_steps=35 format=3 uid="uid://qu8y3g660l8f"]
 
 [ext_resource type="Script" path="res://Escenes/jugador.gd" id="1_mk3jy"]
+[ext_resource type="Texture2D" uid="uid://djwebbw0nmjvr" path="res://imatges/Police/police_N.png" id="2_d1256"]
+[ext_resource type="Texture2D" uid="uid://bu3ysgsyemcrd" path="res://imatges/Police/police_W.png" id="2_mp6oc"]
+[ext_resource type="Texture2D" uid="uid://c7qgqdaof78hr" path="res://imatges/Police/police_E.png" id="2_si8g2"]
 [ext_resource type="Texture2D" uid="uid://54l05wvw22hf" path="res://imatges/Police/police_SE.png" id="2_twrih"]
 [ext_resource type="Texture2D" uid="uid://bojeglr0c1bpk" path="res://imatges/Police/police_SW.png" id="2_wd0tj"]
 [ext_resource type="Texture2D" uid="uid://cstkalf8qwao2" path="res://imatges/Police/police_S.png" id="4_4cvu3"]
+[ext_resource type="Texture2D" uid="uid://jmvlo1f4fynr" path="res://imatges/Police/police_NW.png" id="7_pgbaj"]
+[ext_resource type="Texture2D" uid="uid://cptim14v0betg" path="res://imatges/Police/police_NE.png" id="9_61sue"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x4p0f"]
 size = Vector2(29, 24)
@@ -119,11 +124,196 @@ _data = {
 "SEW": SubResource("Animation_23ncx")
 }
 
+[sub_resource type="Animation" id="Animation_5yrvx"]
+resource_name = "W"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_mp6oc")]
+}
+
+[sub_resource type="Animation" id="Animation_e4ulp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_mp6oc")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yer5b"]
+_data = {
+"RESET": SubResource("Animation_e4ulp"),
+"W": SubResource("Animation_5yrvx")
+}
+
+[sub_resource type="Animation" id="Animation_5ya0w"]
+resource_name = "NW"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_pgbaj")]
+}
+
+[sub_resource type="Animation" id="Animation_ggmev"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_pgbaj")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_m8eh8"]
+_data = {
+"NW": SubResource("Animation_5ya0w"),
+"RESET": SubResource("Animation_ggmev")
+}
+
+[sub_resource type="Animation" id="Animation_0u42g"]
+resource_name = "N"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_d1256")]
+}
+
+[sub_resource type="Animation" id="Animation_451sl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_d1256")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_u1bq5"]
+_data = {
+"N": SubResource("Animation_0u42g"),
+"RESET": SubResource("Animation_451sl")
+}
+
+[sub_resource type="Animation" id="Animation_pywr7"]
+resource_name = "NE"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("9_61sue")]
+}
+
+[sub_resource type="Animation" id="Animation_vb80k"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("9_61sue")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6wgka"]
+_data = {
+"NE": SubResource("Animation_pywr7"),
+"RESET": SubResource("Animation_vb80k")
+}
+
+[sub_resource type="Animation" id="Animation_8mgnl"]
+resource_name = "E"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_si8g2")]
+}
+
+[sub_resource type="Animation" id="Animation_k87ps"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_si8g2")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ug8en"]
+_data = {
+"E": SubResource("Animation_8mgnl"),
+"RESET": SubResource("Animation_k87ps")
+}
+
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_mk3jy")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_wd0tj")
+texture = ExtResource("2_si8g2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_x4p0f")
@@ -143,4 +333,29 @@ libraries = {
 [node name="SW" type="AnimationPlayer" parent="animacions"]
 libraries = {
 "": SubResource("AnimationLibrary_dr6l0")
+}
+
+[node name="W" type="AnimationPlayer" parent="animacions"]
+libraries = {
+"": SubResource("AnimationLibrary_yer5b")
+}
+
+[node name="NW" type="AnimationPlayer" parent="animacions"]
+libraries = {
+"": SubResource("AnimationLibrary_m8eh8")
+}
+
+[node name="N" type="AnimationPlayer" parent="animacions"]
+libraries = {
+"": SubResource("AnimationLibrary_u1bq5")
+}
+
+[node name="NE" type="AnimationPlayer" parent="animacions"]
+libraries = {
+"": SubResource("AnimationLibrary_6wgka")
+}
+
+[node name="E" type="AnimationPlayer" parent="animacions"]
+libraries = {
+"": SubResource("AnimationLibrary_ug8en")
 }
