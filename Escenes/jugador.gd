@@ -7,6 +7,9 @@ var angle = 0
 var direccio = Vector2(1, 1).normalized()
 var previous_angle = 0
 var velocitat_angular = 0.001
+var angle_anterior = 0
+var angle_dict = {Vector2(PI / 8, 15 * PI / 8) : 'E', Vector2(15 * PI / 8, 13 * PI / 8) : 'SE', Vector2(13 * PI / 8, 11 * PI / 8) : 'S', Vector2(11 * PI / 8, 9 * PI / 8) : 'SW', Vector2(9 * PI / 8, 7 * PI / 8) : 'W', Vector2(7 * PI / 8, 5 * PI / 8) : 'NW', Vector2(5 * PI / 8, 3 * PI / 8) : 'N', Vector2(3 * PI/8, PI / 8) : 'NE'}
+var angle_dict2 = {0 : 'E', 7 * PI / 4 : 'SE', 3 * PI / 2 : 'S', 5 * PI / 4 : 'SW'}					
 #var resolucio = get_tree().root.content_scale_size
 
 func _ready():
@@ -31,6 +34,8 @@ func _process(delta):
 
 	var angle = direccio.angle()
 	
-	if angle < PI/2:
+	if angle_dict[angle_anterior] != angle_dict[angle]:
+		$ani
 		
+	angle_anterior = angle
 	
