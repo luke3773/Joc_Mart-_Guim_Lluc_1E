@@ -2,25 +2,33 @@ extends CharacterBody2D
 
 const max_vel = 500
 var vel = 0
-const max_angle = 0.04
 var angle = 0
 var direccio = Vector2(1, 1).normalized()
 var previous_angle = 0
-var velocitat_angular = 0.001
+var velocitat_angular = 0.05
 var angle_anterior = 0
-var angle_dict = {Vector2(PI / 8, 15 * PI / 8) : 'E', Vector2(15 * PI / 8, 13 * PI / 8) : 'SE', Vector2(13 * PI / 8, 11 * PI / 8) : 'S', Vector2(11 * PI / 8, 9 * PI / 8) : 'SW', Vector2(9 * PI / 8, 7 * PI / 8) : 'W', Vector2(7 * PI / 8, 5 * PI / 8) : 'NW', Vector2(5 * PI / 8, 3 * PI / 8) : 'N', Vector2(3 * PI/8, PI / 8) : 'NE'}
-var angle_dict2 = {0 : 'E', 7 * PI / 4 : 'SE', 3 * PI / 2 : 'S', 5 * PI / 4 : 'SW'}					
+#var angle_dict = {Vector2(PI / 8, 15 * PI / 8) : 'E', Vector2(15 * PI / 8, 13 * PI / 8) : 'SE', Vector2(13 * PI / 8, 11 * PI / 8) : 'S', Vector2(11 * PI / 8, 9 * PI / 8) : 'SW', Vector2(9 * PI / 8, 7 * PI / 8) : 'W', Vector2(7 * PI / 8, 5 * PI / 8) : 'NW', Vector2(5 * PI / 8, 3 * PI / 8) : 'N', Vector2(3 * PI/8, PI / 8) : 'NE'}
+var angle_dict = {0 : 'E', 7 * PI / 4 : 'SE', 3 * PI / 2 : 'S', 5 * PI / 4 : 'SW', PI : 'W', 3 * PI / 4 : 'NW', PI / 2 : 'N', PI / 4 : 'NE'}					
 #var resolucio = get_tree().root.content_scale_size
+
+func find_similar(angle, dict):
+	var most_similar = 100
+	
+	for item in dict:
+		if abs(item - angle) < most_similar:
+			most_similar = item
+	
+	return dict[most_similar]
 
 func _ready():
 	#position = Vector2(resolucio.x / 2, resolucio.y / 2)
-	previous_angle = angle
+	pass
 	
 func _process(delta):
-	if Input.is_action_pressed("dreta") and angle <= max_angle:
+	if Input.is_action_pressed("dreta"):
 		direccio = direccio.rotated(velocitat_angular)
 		
-	if Input.is_action_pressed("esquerra") and angle >= max_angle * -1:
+	if Input.is_action_pressed("esquerra"):
 		direccio = direccio.rotated(-velocitat_angular)
 		
 	if Input.is_action_pressed("accelerar") and vel <= max_vel:
@@ -31,11 +39,15 @@ func _process(delta):
 	
 	velocity = direccio * vel
 	move_and_slide()
-
-	var angle = direccio.angle()
 	
-	if angle_dict[angle_anterior] != angle_dict[angle]:
-		$ani
+	angle = direccio.angle()
+	
+	print(find_similar(angle, angle_dict))
+	
+	if find_similar(angle, angle_dict) == 'E':
+		$animacions/E.play()
 		
-	angle_anterior = angle
+	if find_similar(angle, angle_dict) == 'SE':
+		$animacions/SE.play()
+
 	
