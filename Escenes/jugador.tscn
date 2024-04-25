@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://qu8y3g660l8f"]
+[gd_scene load_steps=21 format=3 uid="uid://qu8y3g660l8f"]
 
 [ext_resource type="Script" path="res://Escenes/jugador.gd" id="1_mk3jy"]
 [ext_resource type="Texture2D" uid="uid://djwebbw0nmjvr" path="res://imatges/Police/police_N.png" id="2_d1256"]
@@ -44,28 +44,7 @@ tracks/0/keys = {
 "values": [ExtResource("2_twrih")]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_ijw63"]
-_data = {
-"RESET": SubResource("Animation_v3hxx"),
-"SE": SubResource("Animation_uj0bo")
-}
-
-[sub_resource type="Animation" id="Animation_r5gmp"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Sprite2D:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("4_4cvu3")]
-}
-
-[sub_resource type="Animation" id="Animation_2sds1"]
+[sub_resource type="Animation" id="Animation_o0hap"]
 resource_name = "S"
 length = 0.001
 tracks/0/type = "value"
@@ -81,13 +60,8 @@ tracks/0/keys = {
 "values": [ExtResource("4_4cvu3")]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_0q78a"]
-_data = {
-"RESET": SubResource("Animation_r5gmp"),
-"S": SubResource("Animation_2sds1")
-}
-
-[sub_resource type="Animation" id="Animation_x10bs"]
+[sub_resource type="Animation" id="Animation_cub4x"]
+resource_name = "SW"
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -102,44 +76,7 @@ tracks/0/keys = {
 "values": [ExtResource("2_wd0tj")]
 }
 
-[sub_resource type="Animation" id="Animation_23ncx"]
-resource_name = "SEW"
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Sprite2D:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("2_wd0tj")]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_dr6l0"]
-_data = {
-"RESET": SubResource("Animation_x10bs"),
-"SEW": SubResource("Animation_23ncx")
-}
-
-[sub_resource type="Animation" id="Animation_e4ulp"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Sprite2D:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("2_mp6oc")]
-}
-
-[sub_resource type="Animation" id="Animation_5yrvx"]
+[sub_resource type="Animation" id="Animation_weajj"]
 resource_name = "W"
 length = 0.001
 tracks/0/type = "value"
@@ -155,13 +92,7 @@ tracks/0/keys = {
 "values": [ExtResource("2_mp6oc")]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_yer5b"]
-_data = {
-"RESET": SubResource("Animation_e4ulp"),
-"W": SubResource("Animation_5yrvx")
-}
-
-[sub_resource type="Animation" id="Animation_5ya0w"]
+[sub_resource type="Animation" id="Animation_2xybd"]
 resource_name = "NW"
 length = 0.001
 tracks/0/type = "value"
@@ -177,28 +108,7 @@ tracks/0/keys = {
 "values": [ExtResource("7_pgbaj")]
 }
 
-[sub_resource type="Animation" id="Animation_ggmev"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Sprite2D:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("7_pgbaj")]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_m8eh8"]
-_data = {
-"NW": SubResource("Animation_5ya0w"),
-"RESET": SubResource("Animation_ggmev")
-}
-
-[sub_resource type="Animation" id="Animation_0u42g"]
+[sub_resource type="Animation" id="Animation_n5hpr"]
 resource_name = "N"
 length = 0.001
 tracks/0/type = "value"
@@ -214,29 +124,8 @@ tracks/0/keys = {
 "values": [ExtResource("2_d1256")]
 }
 
-[sub_resource type="Animation" id="Animation_451sl"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Sprite2D:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("2_d1256")]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_u1bq5"]
-_data = {
-"N": SubResource("Animation_0u42g"),
-"RESET": SubResource("Animation_451sl")
-}
-
-[sub_resource type="Animation" id="Animation_pywr7"]
-resource_name = "NE"
+[sub_resource type="Animation" id="Animation_b1odn"]
+resource_name = " NE"
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -251,28 +140,7 @@ tracks/0/keys = {
 "values": [ExtResource("9_61sue")]
 }
 
-[sub_resource type="Animation" id="Animation_vb80k"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Sprite2D:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("9_61sue")]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_6wgka"]
-_data = {
-"NE": SubResource("Animation_pywr7"),
-"RESET": SubResource("Animation_vb80k")
-}
-
-[sub_resource type="Animation" id="Animation_8mgnl"]
+[sub_resource type="Animation" id="Animation_kk2uq"]
 resource_name = "E"
 length = 0.001
 tracks/0/type = "value"
@@ -288,25 +156,17 @@ tracks/0/keys = {
 "values": [ExtResource("2_si8g2")]
 }
 
-[sub_resource type="Animation" id="Animation_k87ps"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Sprite2D:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("2_si8g2")]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_ug8en"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ijw63"]
 _data = {
-"E": SubResource("Animation_8mgnl"),
-"RESET": SubResource("Animation_k87ps")
+" NE": SubResource("Animation_b1odn"),
+"E": SubResource("Animation_kk2uq"),
+"N": SubResource("Animation_n5hpr"),
+"NW": SubResource("Animation_2xybd"),
+"RESET": SubResource("Animation_v3hxx"),
+"S": SubResource("Animation_o0hap"),
+"SE": SubResource("Animation_uj0bo"),
+"SW": SubResource("Animation_cub4x"),
+"W": SubResource("Animation_weajj")
 }
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
@@ -318,44 +178,8 @@ texture = ExtResource("2_si8g2")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_x4p0f")
 
-[node name="animacions" type="Node2D" parent="."]
-
-[node name="SE" type="AnimationPlayer" parent="animacions"]
+[node name="animacio" type="AnimationPlayer" parent="."]
+root_node = NodePath("")
 libraries = {
 "": SubResource("AnimationLibrary_ijw63")
-}
-
-[node name="S" type="AnimationPlayer" parent="animacions"]
-libraries = {
-"": SubResource("AnimationLibrary_0q78a")
-}
-
-[node name="SW" type="AnimationPlayer" parent="animacions"]
-libraries = {
-"": SubResource("AnimationLibrary_dr6l0")
-}
-
-[node name="W" type="AnimationPlayer" parent="animacions"]
-libraries = {
-"": SubResource("AnimationLibrary_yer5b")
-}
-
-[node name="NW" type="AnimationPlayer" parent="animacions"]
-libraries = {
-"": SubResource("AnimationLibrary_m8eh8")
-}
-
-[node name="N" type="AnimationPlayer" parent="animacions"]
-libraries = {
-"": SubResource("AnimationLibrary_u1bq5")
-}
-
-[node name="NE" type="AnimationPlayer" parent="animacions"]
-libraries = {
-"": SubResource("AnimationLibrary_6wgka")
-}
-
-[node name="E" type="AnimationPlayer" parent="animacions"]
-libraries = {
-"": SubResource("AnimationLibrary_ug8en")
 }
