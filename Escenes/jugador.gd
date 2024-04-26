@@ -3,7 +3,7 @@ extends CharacterBody2D
 const max_vel = 500
 var vel = 0
 var angle = 0
-var direccio = Vector2(1, 1).normalized()
+var direccio = Vector2.RIGHT
 var previous_angle = 0
 var velocitat_angular = 0.05
 var angle_anterior = 0
@@ -13,8 +13,12 @@ var angle_dict = {Vector2.RIGHT : 'E', Vector2(1,1).normalized() : 'SE', Vector2
 var punt = Vector2(4, 5)
 
 func troba_animacio(angle, dict):
+	
 	for direccio in dict:
-		if -PI/16 <= direccio.angle_to(Vector2.RIGHT.rotated(angle)) and  direccio.angle_to(Vector2.RIGHT.rotated(angle)) >= PI/16:
+		if -PI/8 <= direccio.angle_to(Vector2.RIGHT.rotated(angle)) and direccio.angle_to(Vector2.RIGHT.rotated(angle)) <= PI/8:
+			print(rad_to_deg(direccio.angle_to(Vector2.RIGHT.rotated(angle))))
+			print(rad_to_deg(Vector2.RIGHT.rotated(angle).angle_to(direccio)))
+			print("%.2f   %.2f   %s" % [direccio.angle(), angle, dict[direccio]])
 			return dict[direccio]
 
 func _ready():
@@ -34,12 +38,15 @@ func _process(delta):
 	if Input.is_action_pressed("accelerar") == false and vel > 0:
 		vel -= 5
 	
+	$Direccio.clear_points()
+	$Direccio.add_point(Vector2.ZERO)
+	$Direccio.add_point(direccio * 100)
 	velocity = direccio * vel
 	move_and_slide()
 	
 	angle = direccio.angle()
 	
-	print(troba_animacio(angle, angle_dict))
+
 	
 	$animacio.play(troba_animacio(angle, angle_dict))
 	
