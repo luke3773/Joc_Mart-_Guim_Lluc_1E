@@ -10,6 +10,7 @@ var angle_anterior = 0
 var angle_dict = {Vector2.RIGHT : 'E', Vector2(1,1).normalized() : 'SE', Vector2.DOWN : 'S', Vector2(-1,1).normalized() : 'SW', Vector2.LEFT: 'W', Vector2(-1, -1).normalized() : 'NW', Vector2.UP : 'N', Vector2(1, -1) : 'NE'}
 #var angle_dict = {(,): 'E', 7 * PI / 4 : 'SE', 3 * PI / 2 : 'S', 5 * PI / 4 : 'SW', PI : 'W', 3 * PI / 4 : 'NW', PI / 2 : 'N', PI / 4 : 'NE'}					
 #var resolucio = get_tree().root.content_scale_size
+var punt = Vector2(4, 5)
 
 func troba_animacio(angle, dict):
 	for direccio in dict:
@@ -47,5 +48,7 @@ func _process(delta):
 		#
 	#if find_similar(angle, angle_dict) == 'SE':
 		#$animacions/SE.play()
+		
+	$fletxa.look_at(punt)
 
 	
