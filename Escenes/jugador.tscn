@@ -1,10 +1,11 @@
-[gd_scene load_steps=21 format=3 uid="uid://qu8y3g660l8f"]
+[gd_scene load_steps=22 format=3 uid="uid://qu8y3g660l8f"]
 
 [ext_resource type="Script" path="res://Escenes/jugador.gd" id="1_mk3jy"]
 [ext_resource type="Texture2D" uid="uid://djwebbw0nmjvr" path="res://imatges/Police/police_N.png" id="2_d1256"]
 [ext_resource type="Texture2D" uid="uid://bu3ysgsyemcrd" path="res://imatges/Police/police_W.png" id="2_mp6oc"]
 [ext_resource type="Texture2D" uid="uid://c7qgqdaof78hr" path="res://imatges/Police/police_E.png" id="2_si8g2"]
 [ext_resource type="Texture2D" uid="uid://54l05wvw22hf" path="res://imatges/Police/police_SE.png" id="2_twrih"]
+[ext_resource type="Texture2D" uid="uid://b5yuf88l4ekal" path="res://imatges/fletxa_provisional.png" id="2_vjp2x"]
 [ext_resource type="Texture2D" uid="uid://bojeglr0c1bpk" path="res://imatges/Police/police_SW.png" id="2_wd0tj"]
 [ext_resource type="Texture2D" uid="uid://cstkalf8qwao2" path="res://imatges/Police/police_S.png" id="4_4cvu3"]
 [ext_resource type="Texture2D" uid="uid://jmvlo1f4fynr" path="res://imatges/Police/police_NW.png" id="7_pgbaj"]
@@ -171,6 +172,9 @@ _data = {
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_mk3jy")
+
+[node name="fletxa" type="Sprite2D" parent="."]
+texture = ExtResource("2_vjp2x")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_si8g2")
