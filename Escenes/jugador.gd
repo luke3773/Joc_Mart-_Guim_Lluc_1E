@@ -16,9 +16,9 @@ func troba_animacio(angle, dict):
 	
 	for direccio in dict:
 		if -PI/8 <= direccio.angle_to(Vector2.RIGHT.rotated(angle)) and direccio.angle_to(Vector2.RIGHT.rotated(angle)) <= PI/8:
-			print(rad_to_deg(direccio.angle_to(Vector2.RIGHT.rotated(angle))))
-			print(rad_to_deg(Vector2.RIGHT.rotated(angle).angle_to(direccio)))
-			print("%.2f   %.2f   %s" % [direccio.angle(), angle, dict[direccio]])
+			#print(rad_to_deg(direccio.angle_to(Vector2.RIGHT.rotated(angle))))
+			#print(rad_to_deg(Vector2.RIGHT.rotated(angle).angle_to(direccio)))
+			#print("%.2f   %.2f   %s" % [direccio.angle(), angle, dict[direccio]])
 			return dict[direccio]
 
 func _ready():
@@ -38,9 +38,9 @@ func _process(delta):
 	if Input.is_action_pressed("accelerar") == false and vel > 0:
 		vel -= 5
 	
-	$Direccio.clear_points()
-	$Direccio.add_point(Vector2.ZERO)
-	$Direccio.add_point(direccio * 100)
+	#$Direccio.clear_points()
+	#$Direccio.add_point(Vector2.ZERO)
+	#$Direccio.add_point(direccio * 100)
 	velocity = direccio * vel
 	move_and_slide()
 	
