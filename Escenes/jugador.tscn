@@ -13,7 +13,8 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x4p0f"]
 size = Vector2(29, 24)
 
-[sub_resource type="Animation" id="Animation_v3hxx"]
+[sub_resource type="Animation" id="Animation_b1odn"]
+resource_name = " NE"
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -25,11 +26,58 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("2_twrih")]
+"values": [ExtResource("9_61sue")]
 }
 
-[sub_resource type="Animation" id="Animation_uj0bo"]
-resource_name = "SE"
+[sub_resource type="Animation" id="Animation_kk2uq"]
+resource_name = "E"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_si8g2")]
+}
+
+[sub_resource type="Animation" id="Animation_n5hpr"]
+resource_name = "N"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_d1256")]
+}
+
+[sub_resource type="Animation" id="Animation_2xybd"]
+resource_name = "NW"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_pgbaj")]
+}
+
+[sub_resource type="Animation" id="Animation_v3hxx"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -58,6 +106,22 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [ExtResource("4_4cvu3")]
+}
+
+[sub_resource type="Animation" id="Animation_uj0bo"]
+resource_name = "SE"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_twrih")]
 }
 
 [sub_resource type="Animation" id="Animation_cub4x"]
@@ -90,70 +154,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [ExtResource("2_mp6oc")]
-}
-
-[sub_resource type="Animation" id="Animation_2xybd"]
-resource_name = "NW"
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Sprite2D:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("7_pgbaj")]
-}
-
-[sub_resource type="Animation" id="Animation_n5hpr"]
-resource_name = "N"
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Sprite2D:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("2_d1256")]
-}
-
-[sub_resource type="Animation" id="Animation_b1odn"]
-resource_name = " NE"
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Sprite2D:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("9_61sue")]
-}
-
-[sub_resource type="Animation" id="Animation_kk2uq"]
-resource_name = "E"
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../Sprite2D:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("2_si8g2")]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ijw63"]
