@@ -1,20 +1,20 @@
-[gd_scene load_steps=22 format=3 uid="uid://qu8y3g660l8f"]
+[gd_scene load_steps=22 format=3 uid="uid://bno38xu6pw1yj"]
 
-[ext_resource type="Script" path="res://Escenes/jugador.gd" id="1_mk3jy"]
-[ext_resource type="Texture2D" uid="uid://c7qgqdaof78hr" path="res://imatges/Police/police_E.png" id="2_si8g2"]
-[ext_resource type="Texture2D" uid="uid://b5yuf88l4ekal" path="res://imatges/fletxa_provisional.png" id="2_vjp2x"]
-[ext_resource type="Texture2D" uid="uid://54l05wvw22hf" path="res://imatges/Police/police_SE.png" id="4_ny8qj"]
-[ext_resource type="Texture2D" uid="uid://cstkalf8qwao2" path="res://imatges/Police/police_S.png" id="5_luv10"]
-[ext_resource type="Texture2D" uid="uid://bojeglr0c1bpk" path="res://imatges/Police/police_SW.png" id="6_jhfs1"]
-[ext_resource type="Texture2D" uid="uid://bu3ysgsyemcrd" path="res://imatges/Police/police_W.png" id="7_glpgb"]
-[ext_resource type="Texture2D" uid="uid://jmvlo1f4fynr" path="res://imatges/Police/police_NW.png" id="8_w7r5x"]
-[ext_resource type="Texture2D" uid="uid://djwebbw0nmjvr" path="res://imatges/Police/police_N.png" id="9_v5r7h"]
-[ext_resource type="Texture2D" uid="uid://cptim14v0betg" path="res://imatges/Police/police_NE.png" id="10_mv1x0"]
+[ext_resource type="Script" path="res://Escenes/lladre.gd" id="1_dgc01"]
+[ext_resource type="Texture2D" uid="uid://b5yuf88l4ekal" path="res://imatges/fletxa_provisional.png" id="2_dfipn"]
+[ext_resource type="Texture2D" uid="uid://kso7bjlxb277" path="res://imatges/Lladre/carSilver6_009.png" id="3_sep2l"]
+[ext_resource type="Texture2D" uid="uid://og1h54anqmyp" path="res://imatges/Lladre/carSilver6_008.png" id="4_pjidw"]
+[ext_resource type="Texture2D" uid="uid://gopomvnvwfjj" path="res://imatges/Lladre/carSilver6_012.png" id="5_mgl31"]
+[ext_resource type="Texture2D" uid="uid://cijlemt6bsq4h" path="res://imatges/Lladre/carSilver6_007.png" id="6_iolaa"]
+[ext_resource type="Texture2D" uid="uid://cb75p78kqjeqw" path="res://imatges/Lladre/carSilver6_006.png" id="7_ejryi"]
+[ext_resource type="Texture2D" uid="uid://diglhn1toied1" path="res://imatges/Lladre/carSilver6_001.png" id="8_f7fqf"]
+[ext_resource type="Texture2D" uid="uid://bwhimv2jr44qn" path="res://imatges/Lladre/carSilver6_002.png" id="9_bg86x"]
+[ext_resource type="Texture2D" uid="uid://jy23gc7q8ecm" path="res://imatges/Lladre/carSilver6_003.png" id="10_g82x8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x4p0f"]
 size = Vector2(29, 24)
 
-[sub_resource type="Animation" id="Animation_m5efp"]
+[sub_resource type="Animation" id="Animation_85y18"]
 resource_name = "E"
 length = 0.001
 tracks/0/type = "value"
@@ -27,10 +27,10 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("2_si8g2")]
+"values": [ExtResource("3_sep2l")]
 }
 
-[sub_resource type="Animation" id="Animation_j3wdf"]
+[sub_resource type="Animation" id="Animation_sovwu"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -42,10 +42,10 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("2_si8g2")]
+"values": [ExtResource("3_sep2l")]
 }
 
-[sub_resource type="Animation" id="Animation_gyso7"]
+[sub_resource type="Animation" id="Animation_wajlr"]
 resource_name = "SE"
 length = 0.001
 tracks/0/type = "value"
@@ -58,10 +58,10 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("4_ny8qj")]
+"values": [ExtResource("4_pjidw")]
 }
 
-[sub_resource type="Animation" id="Animation_wmlb7"]
+[sub_resource type="Animation" id="Animation_auiyc"]
 resource_name = "S"
 length = 0.001
 tracks/0/type = "value"
@@ -74,10 +74,10 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("5_luv10")]
+"values": [ExtResource("5_mgl31")]
 }
 
-[sub_resource type="Animation" id="Animation_t0s0r"]
+[sub_resource type="Animation" id="Animation_jddks"]
 resource_name = "SW"
 length = 0.001
 tracks/0/type = "value"
@@ -90,10 +90,10 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("6_jhfs1")]
+"values": [ExtResource("6_iolaa")]
 }
 
-[sub_resource type="Animation" id="Animation_x6bnn"]
+[sub_resource type="Animation" id="Animation_op0vi"]
 resource_name = "W"
 length = 0.001
 tracks/0/type = "value"
@@ -106,10 +106,10 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("7_glpgb")]
+"values": [ExtResource("7_ejryi")]
 }
 
-[sub_resource type="Animation" id="Animation_7wmjb"]
+[sub_resource type="Animation" id="Animation_8n2tn"]
 resource_name = "NW"
 length = 0.001
 tracks/0/type = "value"
@@ -122,10 +122,10 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("8_w7r5x")]
+"values": [ExtResource("8_f7fqf")]
 }
 
-[sub_resource type="Animation" id="Animation_sd1xf"]
+[sub_resource type="Animation" id="Animation_rscp7"]
 resource_name = "N"
 length = 0.001
 tracks/0/type = "value"
@@ -138,10 +138,10 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("9_v5r7h")]
+"values": [ExtResource("9_bg86x")]
 }
 
-[sub_resource type="Animation" id="Animation_88fo4"]
+[sub_resource type="Animation" id="Animation_pueyd"]
 resource_name = "NE"
 length = 0.001
 tracks/0/type = "value"
@@ -154,35 +154,35 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("10_mv1x0")]
+"values": [ExtResource("10_g82x8")]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_2ijas"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_f62uh"]
 _data = {
-"E": SubResource("Animation_m5efp"),
-"N": SubResource("Animation_sd1xf"),
-"NE": SubResource("Animation_88fo4"),
-"NW": SubResource("Animation_7wmjb"),
-"RESET": SubResource("Animation_j3wdf"),
-"S": SubResource("Animation_wmlb7"),
-"SE": SubResource("Animation_gyso7"),
-"SW": SubResource("Animation_t0s0r"),
-"W": SubResource("Animation_x6bnn")
+"E": SubResource("Animation_85y18"),
+"N": SubResource("Animation_rscp7"),
+"NE": SubResource("Animation_pueyd"),
+"NW": SubResource("Animation_8n2tn"),
+"RESET": SubResource("Animation_sovwu"),
+"S": SubResource("Animation_auiyc"),
+"SE": SubResource("Animation_wajlr"),
+"SW": SubResource("Animation_jddks"),
+"W": SubResource("Animation_op0vi")
 }
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
-script = ExtResource("1_mk3jy")
+[node name="lladre" type="CharacterBody2D"]
+script = ExtResource("1_dgc01")
 
 [node name="fletxa" type="Sprite2D" parent="."]
-texture = ExtResource("2_vjp2x")
+texture = ExtResource("2_dfipn")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_si8g2")
+texture = ExtResource("3_sep2l")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_x4p0f")
 
 [node name="animacio" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_2ijas")
+"": SubResource("AnimationLibrary_f62uh")
 }

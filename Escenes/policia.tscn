@@ -1,0 +1,188 @@
+[gd_scene load_steps=22 format=3 uid="uid://qu8y3g660l8f"]
+
+[ext_resource type="Script" path="res://Escenes/policia.gd" id="1_ky4of"]
+[ext_resource type="Texture2D" uid="uid://b5yuf88l4ekal" path="res://imatges/fletxa_provisional.png" id="2_0apob"]
+[ext_resource type="Texture2D" uid="uid://c7qgqdaof78hr" path="res://imatges/Police/police_E.png" id="3_k5inb"]
+[ext_resource type="Texture2D" uid="uid://djwebbw0nmjvr" path="res://imatges/Police/police_N.png" id="4_agw0n"]
+[ext_resource type="Texture2D" uid="uid://cptim14v0betg" path="res://imatges/Police/police_NE.png" id="5_0nfgq"]
+[ext_resource type="Texture2D" uid="uid://jmvlo1f4fynr" path="res://imatges/Police/police_NW.png" id="6_1pl0g"]
+[ext_resource type="Texture2D" uid="uid://cstkalf8qwao2" path="res://imatges/Police/police_S.png" id="7_iw3xf"]
+[ext_resource type="Texture2D" uid="uid://54l05wvw22hf" path="res://imatges/Police/police_SE.png" id="8_utkjo"]
+[ext_resource type="Texture2D" uid="uid://bojeglr0c1bpk" path="res://imatges/Police/police_SW.png" id="9_eby04"]
+[ext_resource type="Texture2D" uid="uid://bu3ysgsyemcrd" path="res://imatges/Police/police_W.png" id="10_xwgq5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x4p0f"]
+size = Vector2(29, 24)
+
+[sub_resource type="Animation" id="Animation_m5efp"]
+resource_name = "E"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_k5inb")]
+}
+
+[sub_resource type="Animation" id="Animation_sd1xf"]
+resource_name = "N"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("4_agw0n")]
+}
+
+[sub_resource type="Animation" id="Animation_88fo4"]
+resource_name = "NE"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("5_0nfgq")]
+}
+
+[sub_resource type="Animation" id="Animation_7wmjb"]
+resource_name = "NW"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("6_1pl0g")]
+}
+
+[sub_resource type="Animation" id="Animation_j3wdf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_k5inb")]
+}
+
+[sub_resource type="Animation" id="Animation_wmlb7"]
+resource_name = "S"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_iw3xf")]
+}
+
+[sub_resource type="Animation" id="Animation_gyso7"]
+resource_name = "SE"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("8_utkjo")]
+}
+
+[sub_resource type="Animation" id="Animation_t0s0r"]
+resource_name = "SW"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("9_eby04")]
+}
+
+[sub_resource type="Animation" id="Animation_x6bnn"]
+resource_name = "W"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("10_xwgq5")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2ijas"]
+_data = {
+"E": SubResource("Animation_m5efp"),
+"N": SubResource("Animation_sd1xf"),
+"NE": SubResource("Animation_88fo4"),
+"NW": SubResource("Animation_7wmjb"),
+"RESET": SubResource("Animation_j3wdf"),
+"S": SubResource("Animation_wmlb7"),
+"SE": SubResource("Animation_gyso7"),
+"SW": SubResource("Animation_t0s0r"),
+"W": SubResource("Animation_x6bnn")
+}
+
+[node name="policia" type="CharacterBody2D"]
+script = ExtResource("1_ky4of")
+
+[node name="fletxa" type="Sprite2D" parent="."]
+texture = ExtResource("2_0apob")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_k5inb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_x4p0f")
+
+[node name="animacio" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_2ijas")
+}
