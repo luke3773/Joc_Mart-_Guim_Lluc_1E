@@ -7,8 +7,8 @@ func _ready():
 	$camera_multiple.add_target($policia)
 	
 	var r = $mapa.get_used_rect()
-	$camera_multiple.limit_left = r.position.x * $mapa.cell_size
-	$camera_multiple.limit_left = r.end.x * $mapa.cell_size
+	$camera_multiple.limit_left = r.position.x * $mapa.tile_set.tile_size.x
+	$camera_multiple.limit_right = r.end.x * $mapa.tile_set.tile_size.x
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
