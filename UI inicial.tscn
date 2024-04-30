@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cdpa6cjjidvq6"]
+[gd_scene load_steps=13 format=3 uid="uid://cdpa6cjjidvq6"]
 
 [ext_resource type="Texture2D" uid="uid://b4ipv46dqj1pc" path="res://imatges/UI/green_button00.png" id="1_imo52"]
 [ext_resource type="Texture2D" uid="uid://ch320mcfxthhu" path="res://imatges/UI/tile_0166.png" id="2_7kcvh"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://rj41g4wxm5go" path="res://imatges/UI/tile_0121.png" id="9_bg53j"]
 [ext_resource type="Texture2D" uid="uid://dnk3dbmlkglqr" path="res://imatges/UI/tile_0122.png" id="10_7c4y2"]
 [ext_resource type="Texture2D" uid="uid://ca7v32sck6qrk" path="res://imatges/UI/grey_panel.png" id="11_umyjn"]
+[ext_resource type="Texture2D" uid="uid://cpyr88mirun7u" path="res://imatges/UI/grey_button15.png" id="12_kjabf"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -106,11 +107,31 @@ texture = ExtResource("11_umyjn")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 344.0
-offset_top = 64.0
-offset_right = 792.0
-offset_bottom = 208.0
+offset_left = 326.0
+offset_top = 72.0
+offset_right = 827.0
+offset_bottom = 216.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Benvinguts, necessitareu ser dues persones. L'objectiu 
+text = "Benvinguts! L'objectiu 
 del joc és que el lladre s'escapi del policia i que el policia
- atrapi el lladre."
+atrapi el lladre. 
+Passeu per sobre de les fletxes grogues per obtenir més 
+velocitati eviteu els plàtans si no voleu frenar!
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 3
+
+[node name="GreyButton15" type="Sprite2D" parent="."]
+position = Vector2(577, 578)
+texture = ExtResource("12_kjabf")
+
+[node name="Button" type="Button" parent="GreyButton15"]
+offset_left = -96.0
+offset_top = -24.0
+offset_right = 94.0
+offset_bottom = 24.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "INICIAR"
+flat = true
