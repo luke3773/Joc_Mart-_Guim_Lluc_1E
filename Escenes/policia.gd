@@ -26,16 +26,16 @@ func _ready():
 	pass
 	
 func _process(delta):
-	if Input.is_action_pressed("dreta"):
+	if Input.is_action_pressed("dreta_p"):
 		direccio = direccio.rotated(velocitat_angular)
 		
-	if Input.is_action_pressed("esquerra"):
+	if Input.is_action_pressed("esquerra_p"):
 		direccio = direccio.rotated(-velocitat_angular)
 		
-	if Input.is_action_pressed("accelerar") and vel <= max_vel:
+	if Input.is_action_pressed("accelerar_p") and vel <= max_vel:
 		vel += 5
 		
-	if Input.is_action_pressed("accelerar") == false and vel > 0:
+	if Input.is_action_pressed("accelerar_p") == false and vel > 0:
 		vel -= 5
 	
 	#$Direccio.clear_points()
