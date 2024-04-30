@@ -1,3 +1,18 @@
-[gd_scene format=3 uid="uid://diiiaqqe5hyxn"]
+[gd_scene load_steps=6 format=3 uid="uid://diiiaqqe5hyxn"]
+
+[ext_resource type="Script" path="res://Escenes/joc.gd" id="1_as7km"]
+[ext_resource type="PackedScene" uid="uid://bno38xu6pw1yj" path="res://Escenes/lladre.tscn" id="2_assmv"]
+[ext_resource type="PackedScene" uid="uid://qu8y3g660l8f" path="res://Escenes/policia.tscn" id="3_petwi"]
+[ext_resource type="PackedScene" uid="uid://dy3rg8tjattga" path="res://camera_2d.tscn" id="4_3hw16"]
+[ext_resource type="PackedScene" uid="uid://dydfk5twbpeu6" path="res://Escenes/TileMapCiutat.tscn" id="5_i66j1"]
 
 [node name="joc" type="Node2D"]
+script = ExtResource("1_as7km")
+
+[node name="mapa" parent="." instance=ExtResource("5_i66j1")]
+
+[node name="lladre" parent="." instance=ExtResource("2_assmv")]
+
+[node name="policia" parent="." instance=ExtResource("3_petwi")]
+
+[node name="camera_multiple" parent="." instance=ExtResource("4_3hw16")]
