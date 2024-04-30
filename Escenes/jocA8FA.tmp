@@ -11,7 +11,5 @@ script = ExtResource("1_as7km")
 [node name="mapa" parent="." instance=ExtResource("5_i66j1")]
 
 [node name="lladre" parent="." instance=ExtResource("2_assmv")]
-position = Vector2(325, 177)
 
 [node name="policia" parent="." instance=ExtResource("3_petwi")]
-position = Vector2(412, 359)

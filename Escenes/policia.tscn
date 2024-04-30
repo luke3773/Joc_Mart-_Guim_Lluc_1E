@@ -174,7 +174,6 @@ _data = {
 script = ExtResource("1_ky4of")
 
 [node name="fletxa" type="Sprite2D" parent="."]
-scale = Vector2(0.35, 0.35)
 texture = ExtResource("2_0apob")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
