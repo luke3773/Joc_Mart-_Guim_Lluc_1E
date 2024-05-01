@@ -49,11 +49,5 @@ func _process(delta):
 
 	
 	$animacio.play(troba_animacio(angle, angle_dict))
-	
-	#if find_similar(angle, angle_dict) == 'E':
-		#$animacions/E.play()
-		#
-	#if find_similar(angle, angle_dict) == 'SE':
-		#$animacions/SE.play()
 		
 	$fletxa.look_at(punt)

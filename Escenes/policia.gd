@@ -26,21 +26,23 @@ func _ready():
 	pass
 	
 func _process(delta):
-	if Input.is_action_pressed("dreta_p"):
-		direccio = direccio.rotated(velocitat_angular)
-		
-	if Input.is_action_pressed("esquerra_p"):
-		direccio = direccio.rotated(-velocitat_angular)
-		
-	if Input.is_action_pressed("accelerar_p") and vel <= max_vel:
-		vel += 5
-		
-	if Input.is_action_pressed("accelerar_p") == false and vel > 0:
-		vel -= 5
+	#if Input.is_action_pressed("dreta_p"):
+		#direccio = direccio.rotated(velocitat_angular)
+		#
+	#if Input.is_action_pressed("esquerra_p"):
+		#direccio = direccio.rotated(-velocitat_angular)
+		#
+	#if Input.is_action_pressed("accelerar_p") and vel <= max_vel:
+		#vel += 5
+		#
+	#if Input.is_action_pressed("accelerar_p") == false and vel > 0:
+		#vel -= 5
 	
 	#$Direccio.clear_points()
 	#$Direccio.add_point(Vector2.ZERO)
 	#$Direccio.add_point(direccio * 100)
+	
+	direccio = Vector2(get_parent().global_position.x - global_position.x, get_parent().global_position.y - global_position.y)
 	velocity = direccio * vel
 	move_and_slide()
 	
