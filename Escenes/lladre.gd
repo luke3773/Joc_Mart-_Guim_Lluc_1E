@@ -1,12 +1,10 @@
 extends CharacterBody2D
 
 const max_vel = 500
-var vel = 0
-var angle = 0
+var acceleracio = 0
 var direccio = Vector2.RIGHT
-var previous_angle = 0
-var velocitat_angular = 0.05
-var angle_anterior = 0
+var velocitat_angular = 0.07
+var velocitat_angular_d = 0.1
 var angle_dict = {Vector2.RIGHT : 'E', Vector2(1,1).normalized() : 'SE', Vector2.DOWN : 'S', Vector2(-1,1).normalized() : 'SW', Vector2.LEFT: 'W', Vector2(-1, -1).normalized() : 'NW', Vector2.UP : 'N', Vector2(1, -1) : 'NE'}
 #var angle_dict = {(,): 'E', 7 * PI / 4 : 'SE', 3 * PI / 2 : 'S', 5 * PI / 4 : 'SW', PI : 'W', 3 * PI / 4 : 'NW', PI / 2 : 'N', PI / 4 : 'NE'}					
 #var resolucio = get_tree().root.content_scale_size
@@ -31,20 +29,30 @@ func _process(delta):
 		
 	if Input.is_action_pressed("esquerra"):
 		direccio = direccio.rotated(-velocitat_angular)
+	
+	if Input.is_action_pressed("dreta") and Input.is_action_pressed("derrapar"):
+		direccio = direccio.rotated(velocitat_angular_d)
 		
-	if Input.is_action_pressed("accelerar") and vel <= max_vel:
-		vel += 5
+	if Input.is_action_pressed("esquerra")and Input.is_action_pressed("derrapar"):
+		direccio = direccio.rotated(-velocitat_angular_d)
 		
-	if Input.is_action_pressed("accelerar") == false and vel > 0:
-		vel -= 5
+	if Input.is_action_pressed("accelerar") and velocity.length() <= max_vel:
+		acceleracio = 200
+		
+	if Input.is_action_pressed("accelerar") == false and velocity.length() > 0:
+		direccio = velocity * -0.5
+	
+	if Input.is_action_pressed("frenar")  and velocity.length() > 0:
+		acceleracio = -100
 	
 	#$Direccio.clear_points()
 	#$Direccio.add_point(Vector2.ZERO)
 	#$Direccio.add_point(direccio * 100)
-	velocity = direccio * vel
+	
+	velocity += direccio.normalized() * acceleracio * delta
 	move_and_slide()
 	
-	angle = direccio.angle()
+	var angle = direccio.angle()
 	
 
 	

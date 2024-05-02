@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var vel = 500
+var vel = 200
 var angle_dict = {Vector2.RIGHT : 'E', Vector2(1,1).normalized() : 'SE', Vector2.DOWN : 'S', Vector2(-1,1).normalized() : 'SW', Vector2.LEFT: 'W', Vector2(-1, -1).normalized() : 'NW', Vector2.UP : 'N', Vector2(1, -1) : 'NE'}
 
 @export var player: Node2D
@@ -28,11 +28,11 @@ func _physics_process(delta):
 	move_and_slide()
 	
 	
-	#angle = velocity.angle()
+	var angle = dir.angle()
 	#
 #
 	#
-	#$animacio.play(troba_animacio(angle, angle_dict))
+	$animacio.play(troba_animacio(angle, angle_dict))
 	
 func makepath():
 	nav_agent.target_position = player.global_position
