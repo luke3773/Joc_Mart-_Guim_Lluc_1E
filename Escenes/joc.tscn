@@ -12,7 +12,7 @@ script = ExtResource("1_as7km")
 [node name="mapa" parent="." instance=ExtResource("5_i66j1")]
 
 [node name="lladre" parent="." instance=ExtResource("2_assmv")]
-position = Vector2(325, 172)
+position = Vector2(325, 157)
 
 [node name="policia_auto" parent="." node_paths=PackedStringArray("player") instance=ExtResource("4_ydju5")]
 position = Vector2(0, -20)

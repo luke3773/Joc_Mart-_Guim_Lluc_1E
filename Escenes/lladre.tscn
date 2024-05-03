@@ -171,6 +171,7 @@ _data = {
 }
 
 [node name="lladre" type="CharacterBody2D"]
+scale = Vector2(0.5, 0.5)
 collision_layer = 2
 collision_mask = 3
 script = ExtResource("1_dgc01")
