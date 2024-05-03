@@ -40,7 +40,9 @@ func _process(delta):
 		acceleracio = 200
 		
 	if Input.is_action_pressed("accelerar") == false and velocity.length() > 0:
-		direccio = velocity * -0.5
+		velocity = 0.95 * velocity
+		acceleracio = 0
+#		direccio.dot()
 	
 	if Input.is_action_pressed("frenar")  and velocity.length() > 0:
 		acceleracio = -100
