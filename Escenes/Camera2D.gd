@@ -3,7 +3,7 @@ extends Camera2D
 var move_speed = 0.5  # camera position lerp speed
 var zoom_speed = 0.25  # camera zoom lerp speed
 var min_zoom = 0.2 # camera won't zoom closer than this
-var max_zoom = 1 #camera won't zoom farther than this
+var max_zoom = 2.5 #camera won't zoom farther than this
 var margin = Vector2(400, 200)  # include some buffer area around targets
 
 var targets = []  # Array of targets to be tracked.
