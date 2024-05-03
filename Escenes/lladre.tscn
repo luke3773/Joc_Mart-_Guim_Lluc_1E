@@ -176,6 +176,7 @@ collision_mask = 3
 script = ExtResource("1_dgc01")
 
 [node name="fletxa" type="Sprite2D" parent="."]
+visible = false
 texture = ExtResource("2_dfipn")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
