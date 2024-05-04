@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://pdy584isvgtm"]
+
+[ext_resource type="Texture2D" uid="uid://cn47rbe6puwtp" path="res://imatges/arrow_yellow.png" id="1_g0krb"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6rmsn"]
+radius = 52.9778
+height = 172.167
+
+[node name="Area2D" type="Area2D"]
+
+[node name="ArrowYellow" type="Sprite2D" parent="."]
+position = Vector2(369, 242)
+texture = ExtResource("1_g0krb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(368, 248)
+rotation = 1.55509
+shape = SubResource("CapsuleShape2D_6rmsn")
