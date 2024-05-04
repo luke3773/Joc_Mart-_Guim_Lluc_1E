@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://diiiaqqe5hyxn"]
+[gd_scene load_steps=8 format=3 uid="uid://diiiaqqe5hyxn"]
 
 [ext_resource type="Script" path="res://Escenes/joc.gd" id="1_as7km"]
 [ext_resource type="PackedScene" uid="uid://bno38xu6pw1yj" path="res://Escenes/lladre.tscn" id="2_assmv"]
@@ -6,11 +6,20 @@
 [ext_resource type="PackedScene" uid="uid://dydfk5twbpeu6" path="res://Escenes/TileMapCiutat.tscn" id="5_i66j1"]
 [ext_resource type="PackedScene" uid="uid://dy3rg8tjattga" path="res://Escenes/camera_2d.tscn" id="5_me3fj"]
 [ext_resource type="PackedScene" uid="uid://pdy584isvgtm" path="res://Escenes/accelerador.tscn" id="6_ff3y3"]
+[ext_resource type="PackedScene" uid="uid://d3ol2cqx4xaxk" path="res://Escenes/ralentitzador.tscn" id="7_u22rp"]
 
 [node name="joc" type="Node2D"]
 script = ExtResource("1_as7km")
 
 [node name="mapa" parent="." instance=ExtResource("5_i66j1")]
+
+[node name="accelerador" parent="." instance=ExtResource("6_ff3y3")]
+position = Vector2(709, 129)
+scale = Vector2(0.1, 0.1)
+
+[node name="ralentitzador" parent="." instance=ExtResource("7_u22rp")]
+position = Vector2(549, 241)
+scale = Vector2(0.1, 0.1)
 
 [node name="lladre" parent="." instance=ExtResource("2_assmv")]
 position = Vector2(325, 157)
@@ -21,8 +30,5 @@ player = NodePath("../lladre")
 
 [node name="camera_multiple" parent="." instance=ExtResource("5_me3fj")]
 
-[node name="Area2D" parent="." instance=ExtResource("6_ff3y3")]
-position = Vector2(564, 255)
-scale = Vector2(0.1, 0.1)
-
-[connection signal="area_entered" from="Area2D" to="lladre" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="accelerador" to="lladre" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="ralentitzador" to="lladre" method="_on_ralentitzador_area_entered"]

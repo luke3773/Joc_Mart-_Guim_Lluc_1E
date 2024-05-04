@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3ol2cqx4xaxk"]
+
+[ext_resource type="Texture2D" uid="uid://dkmamnsp47com" path="res://imatges/ralentitzador.png" id="1_qpww7"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6ryyx"]
+radius = 119.0
+height = 238.0
+
+[node name="Area2D" type="Area2D"]
+position = Vector2(-1, 0)
+
+[node name="Ralentitzador" type="Sprite2D" parent="."]
+position = Vector2(509, 320)
+scale = Vector2(0.230469, 0.198063)
+texture = ExtResource("1_qpww7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(516, 339)
+shape = SubResource("CapsuleShape2D_6ryyx")

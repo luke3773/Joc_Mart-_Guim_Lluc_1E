@@ -64,4 +64,10 @@ func _process(delta):
 
 
 func _on_area_2d_area_entered(area):
-	acceleracio += 50
+	acceleracio = 350
+
+
+
+
+func _on_ralentitzador_area_entered(area):
+	acceleracio = -50
