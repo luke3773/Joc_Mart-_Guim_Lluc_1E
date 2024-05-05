@@ -65,6 +65,8 @@ func _process(delta):
 
 func _on_area_2d_area_entered(area):
 	acceleracio = 350
+	
+#jo faria que vagi x temps -Martí
 
 
 

@@ -4,7 +4,7 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$camera_multiple.add_target($lladre)
-	$camera_multiple.add_target($policia_auto)
+	$camera_multiple.add_target($policia)
 	
 	var r = $mapa.get_used_rect()
 	$camera_multiple.limit_left = r.position.x * $mapa.tile_set.tile_size.x

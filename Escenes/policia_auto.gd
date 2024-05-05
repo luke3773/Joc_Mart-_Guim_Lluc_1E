@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var vel = 200
+var vel = 50
 var angle_dict = {Vector2.RIGHT : 'E', Vector2(1,1).normalized() : 'SE', Vector2.DOWN : 'S', Vector2(-1,1).normalized() : 'SW', Vector2.LEFT: 'W', Vector2(-1, -1).normalized() : 'NW', Vector2.UP : 'N', Vector2(1, -1) : 'NE'}
 
 @export var player: Node2D
