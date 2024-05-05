@@ -1,5 +1,6 @@
-[gd_scene load_steps=13 format=3 uid="uid://cdpa6cjjidvq6"]
+[gd_scene load_steps=14 format=3 uid="uid://cdpa6cjjidvq6"]
 
+[ext_resource type="Script" path="res://Escenes/UI inicial.gd" id="1_2j0rd"]
 [ext_resource type="Texture2D" uid="uid://b4ipv46dqj1pc" path="res://imatges/UI/green_button00.png" id="1_imo52"]
 [ext_resource type="Texture2D" uid="uid://ch320mcfxthhu" path="res://imatges/UI/tile_0166.png" id="2_7kcvh"]
 [ext_resource type="Texture2D" uid="uid://dc40mu3cr44qr" path="res://imatges/UI/tile_0167.png" id="3_c24dx"]
@@ -18,8 +19,11 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 1055.0
+offset_bottom = 338.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_2j0rd")
 
 [node name="GreenButton00" type="Sprite2D" parent="."]
 position = Vector2(850, 304)
@@ -135,3 +139,5 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 25
 text = "INICIAR"
 flat = true
+
+[connection signal="pressed" from="GreyButton15/Button" to="." method="_on_button_pressed"]
