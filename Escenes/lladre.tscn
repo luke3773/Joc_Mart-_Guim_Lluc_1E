@@ -191,3 +191,5 @@ shape = SubResource("RectangleShape2D_x4p0f")
 libraries = {
 "": SubResource("AnimationLibrary_f62uh")
 }
+
+[node name="accelerador_time" type="Timer" parent="."]
