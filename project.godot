@@ -14,6 +14,10 @@ config/name="Joc_Martí_Guim_Lluc_1E"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*res://Escenes/global.gd"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/kenny_spritesheet_importer/plugin.cfg")

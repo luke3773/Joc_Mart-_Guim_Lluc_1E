@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 const max_vel = 500
 var acceleracio = 0
+var max_acc = 200
 var direccio = Vector2.RIGHT
 var velocitat_angular = 0.07
 var derrape = 0.1
@@ -24,6 +25,7 @@ func _ready():
 	pass
 	
 func _process(delta):
+			
 	if Input.is_action_pressed("dreta"):
 		direccio = direccio.rotated(velocitat_angular)
 		
@@ -37,7 +39,7 @@ func _process(delta):
 		velocity = velocity.rotated(-derrape)
 		
 	if Input.is_action_pressed("accelerar") and velocity.length() <= max_vel:
-		acceleracio = 200
+		acceleracio = max_acc
 		
 	if Input.is_action_pressed("accelerar") == false and velocity.length() > 0:
 		velocity = 0.95 * velocity
@@ -61,10 +63,13 @@ func _process(delta):
 	$animacio.play(troba_animacio(angle, angle_dict))
 		
 	$fletxa.look_at(punt)
+	
+	print(max_acc)
 
 
 func _on_area_2d_area_entered(area):
-	acceleracio = 350
+	max_acc = 999999999
+
 	
 #jo faria que vagi x temps -Martí
 
@@ -73,3 +78,11 @@ func _on_area_2d_area_entered(area):
 
 func _on_ralentitzador_area_entered(area):
 	acceleracio = -50
+
+
+func _on_accelerador_body_entered(body):
+	max_acc = 2000
+	var llista_punts : Array[Node] = Global.Punts.get_children()
+	var nombre_punts = llista_punts.size()
+	
+	$accelerador.global_position = llista_punts[randi_range(0, nombre_punts-1)].global_position
