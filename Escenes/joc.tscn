@@ -18,13 +18,13 @@ position = Vector2(1500, 394)
 script = ExtResource("3_gbxa7")
 
 [node name="Marker2D" type="Marker2D" parent="MapaDefinitiu/Punts"]
-position = Vector2(-1303, 148)
+position = Vector2(-1218, 110)
 
 [node name="Marker2D2" type="Marker2D" parent="MapaDefinitiu/Punts"]
 position = Vector2(-149, -87)
 
 [node name="Marker2D3" type="Marker2D" parent="MapaDefinitiu/Punts"]
-position = Vector2(-1354, -602)
+position = Vector2(-549, -553)
 
 [node name="lladre" parent="." instance=ExtResource("2_assmv")]
 position = Vector2(-115, 814)
