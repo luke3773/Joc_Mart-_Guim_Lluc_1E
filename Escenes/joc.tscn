@@ -1,51 +1,38 @@
-[gd_scene load_steps=9 format=3 uid="uid://diiiaqqe5hyxn"]
+[gd_scene load_steps=7 format=3 uid="uid://diiiaqqe5hyxn"]
 
 [ext_resource type="Script" path="res://Escenes/joc.gd" id="1_as7km"]
+[ext_resource type="PackedScene" uid="uid://cvionj5bjd3gm" path="res://Escenes/MapaDefinitiu.tscn" id="2_3oqj6"]
 [ext_resource type="PackedScene" uid="uid://bno38xu6pw1yj" path="res://Escenes/lladre.tscn" id="2_assmv"]
 [ext_resource type="Script" path="res://Escenes/Punts.gd" id="3_gbxa7"]
-[ext_resource type="PackedScene" uid="uid://dydfk5twbpeu6" path="res://Escenes/TileMapCiutat.tscn" id="5_i66j1"]
 [ext_resource type="PackedScene" uid="uid://dy3rg8tjattga" path="res://Escenes/camera_2d.tscn" id="5_me3fj"]
-[ext_resource type="PackedScene" uid="uid://pdy584isvgtm" path="res://Escenes/accelerador.tscn" id="6_ff3y3"]
 [ext_resource type="PackedScene" uid="uid://qu8y3g660l8f" path="res://Escenes/policia.tscn" id="7_l5fy0"]
-[ext_resource type="PackedScene" uid="uid://d3ol2cqx4xaxk" path="res://Escenes/ralentitzador.tscn" id="7_u22rp"]
 
 [node name="joc" type="Node2D"]
 script = ExtResource("1_as7km")
 
-[node name="mapa" parent="." instance=ExtResource("5_i66j1")]
+[node name="MapaDefinitiu" parent="." instance=ExtResource("2_3oqj6")]
+position = Vector2(0, -1)
 
-[node name="Punts" type="Node2D" parent="mapa"]
+[node name="Punts" type="Node2D" parent="MapaDefinitiu"]
+position = Vector2(1500, 394)
 script = ExtResource("3_gbxa7")
 
-[node name="Marker2D" type="Marker2D" parent="mapa/Punts"]
-position = Vector2(-22, 114)
+[node name="Marker2D" type="Marker2D" parent="MapaDefinitiu/Punts"]
+position = Vector2(-1303, 148)
 
-[node name="Marker2D2" type="Marker2D" parent="mapa/Punts"]
-position = Vector2(-46, 337)
+[node name="Marker2D2" type="Marker2D" parent="MapaDefinitiu/Punts"]
+position = Vector2(-149, -87)
 
-[node name="Marker2D3" type="Marker2D" parent="mapa/Punts"]
-position = Vector2(66, 474)
+[node name="Marker2D3" type="Marker2D" parent="MapaDefinitiu/Punts"]
+position = Vector2(-1354, -602)
 
 [node name="lladre" parent="." instance=ExtResource("2_assmv")]
-position = Vector2(325, 157)
-
-[node name="accelerador" parent="lladre" instance=ExtResource("6_ff3y3")]
-position = Vector2(768, -56)
-scale = Vector2(0.2, 0.2)
-collision_layer = 3
-collision_mask = 3
-
-[node name="ralentitzador" parent="lladre" instance=ExtResource("7_u22rp")]
-position = Vector2(448, 168)
-scale = Vector2(0.2, 0.2)
+position = Vector2(-115, 814)
 
 [node name="policia" parent="." node_paths=PackedStringArray("lladre") instance=ExtResource("7_l5fy0")]
-position = Vector2(-8, -12)
+position = Vector2(-480, 992)
 lladre = NodePath("../lladre")
 
 [node name="camera_multiple" parent="." instance=ExtResource("5_me3fj")]
 editor_draw_limits = true
 editor_draw_drag_margin = true
-
-[connection signal="body_entered" from="lladre/accelerador" to="lladre" method="_on_accelerador_body_entered"]
-[connection signal="area_entered" from="lladre/ralentitzador" to="lladre" method="_on_ralentitzador_area_entered"]
