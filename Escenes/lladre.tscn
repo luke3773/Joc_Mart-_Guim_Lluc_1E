@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://bno38xu6pw1yj"]
+[gd_scene load_steps=22 format=3 uid="uid://bno38xu6pw1yj"]
 
 [ext_resource type="Script" path="res://Escenes/lladre.gd" id="1_dgc01"]
 [ext_resource type="Texture2D" uid="uid://b5yuf88l4ekal" path="res://imatges/fletxa_provisional.png" id="2_dfipn"]
@@ -10,7 +10,6 @@
 [ext_resource type="Texture2D" uid="uid://diglhn1toied1" path="res://imatges/Lladre/carSilver6_001.png" id="8_f7fqf"]
 [ext_resource type="Texture2D" uid="uid://bwhimv2jr44qn" path="res://imatges/Lladre/carSilver6_002.png" id="9_bg86x"]
 [ext_resource type="Texture2D" uid="uid://jy23gc7q8ecm" path="res://imatges/Lladre/carSilver6_003.png" id="10_g82x8"]
-[ext_resource type="AudioStream" uid="uid://cx0v65wj6028v" path="res://Escenes/car ignition(accelerar.wav" id="11_is4tl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x4p0f"]
 size = Vector2(29, 24)
@@ -194,6 +193,3 @@ libraries = {
 }
 
 [node name="accelerador_time" type="Timer" parent="."]
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("11_is4tl")
