@@ -196,4 +196,5 @@ libraries = {
 [node name="accelerador_time" type="Timer" parent="."]
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+visible = false
 stream = ExtResource("11_is4tl")
