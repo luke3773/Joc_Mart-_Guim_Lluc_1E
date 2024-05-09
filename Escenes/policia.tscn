@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://qu8y3g660l8f"]
+[gd_scene load_steps=23 format=3 uid="uid://qu8y3g660l8f"]
 
 [ext_resource type="Script" path="res://Escenes/policia.gd" id="1_ky4of"]
 [ext_resource type="Texture2D" uid="uid://b5yuf88l4ekal" path="res://imatges/fletxa_provisional.png" id="2_0apob"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://54l05wvw22hf" path="res://imatges/Police/police_SE.png" id="8_utkjo"]
 [ext_resource type="Texture2D" uid="uid://bojeglr0c1bpk" path="res://imatges/Police/police_SW.png" id="9_eby04"]
 [ext_resource type="Texture2D" uid="uid://bu3ysgsyemcrd" path="res://imatges/Police/police_W.png" id="10_xwgq5"]
+[ext_resource type="AudioStream" uid="uid://cx0v65wj6028v" path="res://Escenes/car ignition(accelerar.wav" id="11_by8w1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x4p0f"]
 size = Vector2(29, 24)
@@ -191,3 +192,6 @@ shape = SubResource("RectangleShape2D_x4p0f")
 libraries = {
 "": SubResource("AnimationLibrary_2ijas")
 }
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_by8w1")

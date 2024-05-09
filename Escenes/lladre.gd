@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+const type = 'lladre'
+
 const max_vel = 500
 var acceleracio = 0
 var max_acc = 200
@@ -40,7 +42,7 @@ func _process(delta):
 		
 	if Input.is_action_pressed("accelerar") and velocity.length() <= max_vel:
 		acceleracio = max_acc
-		
+		$accelera.play()
 	if Input.is_action_pressed("accelerar") == false and velocity.length() > 0:
 		velocity = 0.95 * velocity
 		acceleracio = 0

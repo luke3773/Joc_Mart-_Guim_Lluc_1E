@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cx0v65wj6028v"
+path="res://.godot/imported/car ignition(accelerar.wav-f2e0f1fe38230b3fb85b0b1146245543.sample"
+
+[deps]
+
+source_file="res://Escenes/car ignition(accelerar.wav"
+dest_files=["res://.godot/imported/car ignition(accelerar.wav-f2e0f1fe38230b3fb85b0b1146245543.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

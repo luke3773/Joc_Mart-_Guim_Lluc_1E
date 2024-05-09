@@ -1,14 +1,14 @@
 extends Camera2D
 
-var move_speed = 0.5  # camera position lerp speed
-var zoom_speed = 0.25  # camera zoom lerp speed
-var min_zoom = 0.005 # camera won't zoom closer than this
-var max_zoom = 2.5 #camera won't zoom farther than this
-var margin = Vector2(400, 200)  # include some buffer area around targets
+@export var move_speed: float  # camera position lerp speed
+@export var zoom_speed: float  # camera zoom lerp speed
+@export var min_zoom: float  # camera won't zoom closer than this
+@export var max_zoom: float  # camera won't zoom farther than this
+@export var margin: Vector2  # include some buffer area around targets
 
 var targets = []  # Array of targets to be tracked.
 
-var screen_size = get_viewport_rect().size
+@onready var screen_size = get_viewport_rect().size
 
 func _process(delta):
 	if !targets:
@@ -24,7 +24,6 @@ func _process(delta):
 	for target in targets:
 		r = r.expand(target.position)
 	r = r.grow_individual(margin.x, margin.y, margin.x, margin.y)
-	var d = max(r.size.x, r.size.y)
 	var z
 	if r.size.x > r.size.y * screen_size.aspect():
 		z = clamp(r.size.x / screen_size.x, min_zoom, max_zoom)
