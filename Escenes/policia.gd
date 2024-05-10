@@ -39,9 +39,11 @@ func _process(delta):
 		velocity = velocity.rotated(-derrape)
 		
 	if Input.is_action_pressed("accelerar_p") and velocity.length() <= max_vel:
+		$acc_p.play()
 		acceleracio = 200
-		#$AudioStreamPlayer2D.play()
+		
 	if Input.is_action_pressed("accelerar_p") == false and velocity.length() > 0:
+		$acc_p.stop()
 		velocity = 0.95 * velocity
 		acceleracio = 0
 #		direccio.dot()
