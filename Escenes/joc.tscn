@@ -27,7 +27,7 @@ position = Vector2(-149, -87)
 position = Vector2(-549, -553)
 
 [node name="lladre" parent="." instance=ExtResource("2_assmv")]
-position = Vector2(-115, 814)
+position = Vector2(-107, 846)
 
 [node name="policia" parent="." node_paths=PackedStringArray("lladre") instance=ExtResource("7_l5fy0")]
 position = Vector2(-480, 992)
@@ -36,3 +36,7 @@ lladre = NodePath("../lladre")
 [node name="camera_multiple" parent="." instance=ExtResource("5_me3fj")]
 editor_draw_limits = true
 editor_draw_drag_margin = true
+move_speed = 0.5
+zoom_speed = 1.0
+min_zoom = 1.5
+max_zoom = 100.0

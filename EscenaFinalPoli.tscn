@@ -1,31 +1,36 @@
-[gd_scene format=3 uid="uid://i04xv7t02ivk"]
+[gd_scene load_steps=4 format=3 uid="uid://i04xv7t02ivk"]
+
+[ext_resource type="Script" path="res://Escenes/EscenaFinalPoli.gd" id="1_1oc0l"]
+[ext_resource type="FontFile" uid="uid://ckwg220lfr1gy" path="res://Race Sport.ttf" id="1_mmngk"]
+[ext_resource type="Texture2D" uid="uid://db05gegcg75j1" path="res://checkered-racing-flag-speed-background_1017-23607_cleanup.png" id="2_byqy6"]
 
 [node name="EscenaFinalPoli" type="Node2D"]
+script = ExtResource("1_1oc0l")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = -176.0
-offset_top = -160.0
-offset_right = 1416.0
-offset_bottom = 896.0
+[node name="Checkered-racing-flag-speed-background1017-23607Cleanup" type="Sprite2D" parent="."]
+position = Vector2(583.75, 322.125)
+scale = Vector2(1.86661, 1.58333)
+texture = ExtResource("2_byqy6")
 
-[node name="Label" type="Label" parent="ColorRect"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -272.0
-offset_top = -116.0
-offset_right = 273.0
-offset_bottom = 32.0
+[node name="Label" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.70439
+anchor_top = 0.0184835
+anchor_right = 0.713939
+anchor_bottom = 0.0524342
+offset_left = 8.0
+offset_top = 192.0
+offset_right = 1149.0
+offset_bottom = 377.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 100
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_mmngk")
+theme_override_font_sizes/font_size = 55
 text = "Final del Joc
 Victòria del Policia!"
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true

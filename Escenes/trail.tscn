@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://de0codsgko7oy"]
+
+[ext_resource type="Script" path="res://trail.gd" id="1_0lsum"]
+
+[node name="trail" type="Node2D"]
+script = ExtResource("1_0lsum")
