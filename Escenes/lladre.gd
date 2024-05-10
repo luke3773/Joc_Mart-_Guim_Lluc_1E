@@ -39,6 +39,7 @@ func _process(delta):
 		velocity = velocity.rotated(-derrape)
 		
 	if Input.is_action_pressed("accelerar") and velocity.length() <= max_vel:
+		$acc.play()
 		acceleracio = max_acc
 
 	if Input.is_action_pressed("accelerar") == false and velocity.length() > 0:
