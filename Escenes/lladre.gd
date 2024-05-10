@@ -11,7 +11,8 @@ var derrape = 0.1
 var angle_dict = {Vector2.RIGHT : 'E', Vector2(1,1).normalized() : 'SE', Vector2.DOWN : 'S', Vector2(-1,1).normalized() : 'SW', Vector2.LEFT: 'W', Vector2(-1, -1).normalized() : 'NW', Vector2.UP : 'N', Vector2(1, -1) : 'NE'}
 #var angle_dict = {(,): 'E', 7 * PI / 4 : 'SE', 3 * PI / 2 : 'S', 5 * PI / 4 : 'SW', PI : 'W', 3 * PI / 4 : 'NW', PI / 2 : 'N', PI / 4 : 'NE'}					
 #var resolucio = get_tree().root.content_scale_size
-var punt = Vector2(4, 5)
+var punt = Vector2(5845.235,-3058)
+@export var areafinal : Node2D
 
 func troba_animacio(angle, dict):
 	
