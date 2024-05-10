@@ -3,5 +3,4 @@
 [ext_resource type="Script" path="res://trail.gd" id="1_0lsum"]
 
 [node name="trail" type="Node2D"]
-rotation = 0.00374857
 script = ExtResource("1_0lsum")

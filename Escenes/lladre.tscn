@@ -194,12 +194,5 @@ libraries = {
 
 [node name="accelerador_time" type="Timer" parent="."]
 
-
 [node name="acc" type="AudioStreamPlayer2D" parent="."]
-visible = true
-
-[node name="trail" parent="." instance=ExtResource("11_lmyrt")]
-position = Vector2(-14, 10)
-
-[node name="trail2" parent="." instance=ExtResource("11_lmyrt")]
-position = Vector2(-14, -9.53674e-07)
+visible = false
