@@ -51,7 +51,8 @@ func _process(delta):
 	
 	if Input.is_action_pressed("frenar")  and velocity.length() > 0:
 		acceleracio = -100
-	
+	if Input.is_action_pressed("accelerar") == false:
+		$acc.stop()
 	#$Direccio.clear_points()
 	#$Direccio.add_point(Vector2.ZERO)
 	#$Direccio.add_point(direccio * 100)
