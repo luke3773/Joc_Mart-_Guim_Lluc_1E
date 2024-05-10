@@ -27,7 +27,7 @@ func _draw():
 	var colors = PackedColorArray()
 	
 	for i in range(s):
-		adjusted.append(points[1] - global_position)
+		adjusted.append(points[i] - global_position)
 		c.a = lerp(1.0, 0.0, i/s)
 		colors.append(c)
 
