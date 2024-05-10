@@ -8,22 +8,8 @@
 process_mode = 3
 script = ExtResource("1_j5rgy")
 
-[node name="Principal" type="Sprite2D" parent="."]
-position = Vector2(575, 383.5)
-texture = ExtResource("1_ayb01")
-
-[node name="MenuPrincipal" type="Button" parent="Principal"]
-offset_left = -72.0
-offset_top = -16.0
-offset_right = 70.0
-offset_bottom = 15.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "MENÚ PRINCIPAL"
-flat = true
-metadata/_edit_use_anchors_ = true
-
 [node name="Continua" type="Sprite2D" parent="."]
-position = Vector2(575, 320.5)
+position = Vector2(576, 376)
 texture = ExtResource("1_ayb01")
 
 [node name="Continua" type="Button" parent="Continua"]
@@ -32,7 +18,7 @@ offset_top = -16.0
 offset_right = 70.0
 offset_bottom = 15.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "CONTINUA"
+text = "CONTINUAR"
 flat = true
 metadata/_edit_use_anchors_ = true
 
@@ -64,6 +50,5 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 40
 text = "MENÚ DE PAUSA"
 
-[connection signal="pressed" from="Principal/MenuPrincipal" to="." method="_on_menu_principal_pressed"]
 [connection signal="pressed" from="Continua/Continua" to="." method="_on_continua_pressed"]
 [connection signal="pressed" from="Sortir/Sortir" to="." method="_on_sortir_pressed"]
