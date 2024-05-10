@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://diiiaqqe5hyxn"]
+[gd_scene load_steps=8 format=3 uid="uid://diiiaqqe5hyxn"]
 
 [ext_resource type="Script" path="res://Escenes/joc.gd" id="1_as7km"]
 [ext_resource type="PackedScene" uid="uid://cvionj5bjd3gm" path="res://Escenes/MapaDefinitiu.tscn" id="2_3oqj6"]
 [ext_resource type="PackedScene" uid="uid://bno38xu6pw1yj" path="res://Escenes/lladre.tscn" id="2_assmv"]
 [ext_resource type="Script" path="res://Escenes/Punts.gd" id="3_gbxa7"]
 [ext_resource type="PackedScene" uid="uid://dy3rg8tjattga" path="res://Escenes/camera_2d.tscn" id="5_me3fj"]
+[ext_resource type="PackedScene" uid="uid://btoypfy6ydt34" path="res://Area_final.tscn" id="7_b182x"]
 [ext_resource type="PackedScene" uid="uid://qu8y3g660l8f" path="res://Escenes/policia.tscn" id="7_l5fy0"]
 
 [node name="joc" type="Node2D"]
@@ -26,11 +27,15 @@ position = Vector2(-149, -87)
 [node name="Marker2D3" type="Marker2D" parent="MapaDefinitiu/Punts"]
 position = Vector2(-549, -553)
 
+[node name="Area2D" parent="." instance=ExtResource("7_b182x")]
+position = Vector2(5845, -3058)
+scale = Vector2(0.3, 0.3)
+
 [node name="lladre" parent="." instance=ExtResource("2_assmv")]
-position = Vector2(-107, 846)
+position = Vector2(-464, 880)
 
 [node name="policia" parent="." node_paths=PackedStringArray("lladre") instance=ExtResource("7_l5fy0")]
-position = Vector2(-480, 992)
+position = Vector2(-665, 981)
 lladre = NodePath("../lladre")
 
 [node name="camera_multiple" parent="." instance=ExtResource("5_me3fj")]

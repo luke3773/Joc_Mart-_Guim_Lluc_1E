@@ -1,4 +1,4 @@
-extends Area2D
+extends Node2D
 
 
 # Called when the node enters the scene tree for the first time.
@@ -13,4 +13,4 @@ func _process(delta):
 
 func _on_body_entered(body):
 	if body.type == 'lladre':
-			get_tree().change_scene_to_file("res://EscenaFinalLladre.tscn")
+		get_tree().change_scene_to_file("res://EscenaFinalLladre.tscn")

@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+const type = 'lladre'
+
 const max_vel = 500
 var acceleracio = 0
 var max_acc = 200

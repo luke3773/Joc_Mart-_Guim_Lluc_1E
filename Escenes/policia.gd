@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+const type = 'policia'
+
 const max_vel = 500
 var acceleracio = 0
 var direccio = Vector2.RIGHT
@@ -38,7 +40,7 @@ func _process(delta):
 		
 	if Input.is_action_pressed("accelerar_p") and velocity.length() <= max_vel:
 		acceleracio = 200
-		$AudioStreamPlayer2D.play()
+		#$AudioStreamPlayer2D.play()
 	if Input.is_action_pressed("accelerar_p") == false and velocity.length() > 0:
 		velocity = 0.95 * velocity
 		acceleracio = 0
