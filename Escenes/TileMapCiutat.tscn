@@ -1,11 +1,8 @@
 [gd_scene load_steps=290 format=3 uid="uid://dydfk5twbpeu6"]
 
-[ext_resource type="Texture2D" uid="uid://bgjfyw2w10hnc" path="res://imatges/Buidings/buildingTiles_001.png" id="1_5qqrl"]
 [ext_resource type="Texture2D" uid="uid://ci2jxjyprp3w1" path="res://imatges/Ciutat/cityTiles_000.png" id="1_sw5w4"]
-[ext_resource type="Texture2D" uid="uid://d24jwxhb8dfy0" path="res://imatges/Buidings/buildingTiles_002.png" id="2_2afwp"]
 [ext_resource type="Texture2D" uid="uid://dt16ju7oi1q3r" path="res://imatges/Ciutat/cityTiles_001.png" id="2_poujw"]
 [ext_resource type="Texture2D" uid="uid://d1bmvyu1x3pdk" path="res://imatges/Ciutat/cityTiles_002.png" id="3_6nj1t"]
-[ext_resource type="Texture2D" uid="uid://dd1xicxyv24xd" path="res://imatges/Buidings/buildingTiles_003.png" id="3_8mfs3"]
 [ext_resource type="Texture2D" uid="uid://c8g3fvanaksdp" path="res://imatges/Ciutat/cityTiles_003.png" id="4_lj07y"]
 [ext_resource type="Texture2D" uid="uid://be5ophu5u4qna" path="res://imatges/Ciutat/cityTiles_004.png" id="5_al8qp"]
 [ext_resource type="Texture2D" uid="uid://dhpj5jeja6u1y" path="res://imatges/Ciutat/cityTiles_005.png" id="6_fxth4"]
@@ -32,7 +29,6 @@
 [ext_resource type="Texture2D" uid="uid://0bls3vppkogp" path="res://imatges/Ciutat/cityTiles_036.png" id="37_5c8j5"]
 [ext_resource type="Texture2D" uid="uid://dl1uijvpg6f57" path="res://imatges/Ciutat/cityTiles_037.png" id="38_tiwb5"]
 [ext_resource type="Texture2D" uid="uid://p23n8alym5n8" path="res://imatges/Ciutat/cityTiles_038.png" id="39_tx8ob"]
-[ext_resource type="Texture2D" uid="uid://cw6f0pfp1tym" path="res://imatges/Buidings/buildingTiles_004.png" id="40_3mlwb"]
 [ext_resource type="Texture2D" uid="uid://bxys5g3fku0d2" path="res://imatges/Ciutat/cityTiles_040.png" id="41_ckcsu"]
 [ext_resource type="Texture2D" uid="uid://dds3swlxu2q7o" path="res://imatges/Ciutat/cityTiles_042.png" id="43_fj1e6"]
 [ext_resource type="Texture2D" uid="uid://ddm34jw7lvvtg" path="res://imatges/Ciutat/cityTiles_043.png" id="44_ox7x8"]
@@ -92,12 +88,8 @@
 [ext_resource type="Texture2D" uid="uid://d83amsxdkapa" path="res://imatges/Ciutat/cityTiles_104.png" id="102_66hum"]
 [ext_resource type="Texture2D" uid="uid://cqorllp3s8xvi" path="res://imatges/Ciutat/cityTiles_106.png" id="104_2ur5n"]
 [ext_resource type="Texture2D" uid="uid://cq2yh4jiyie7" path="res://imatges/Ciutat/cityTiles_107.png" id="105_x6kha"]
-[ext_resource type="Texture2D" uid="uid://dnf27bkar0y0u" path="res://imatges/Buidings/buildingTiles_005.png" id="106_oe0f3"]
-[ext_resource type="Texture2D" uid="uid://cc0pq247opel2" path="res://imatges/Buidings/buildingTiles_006.png" id="107_ki0m3"]
 [ext_resource type="Texture2D" uid="uid://bm2oi4bjftsyh" path="res://imatges/Ciutat/cityTiles_110.png" id="108_3dmct"]
-[ext_resource type="Texture2D" uid="uid://xncupw4ei5yc" path="res://imatges/Buidings/buildingTiles_074.png" id="108_sua8h"]
 [ext_resource type="Texture2D" uid="uid://tm1jtkw8117e" path="res://imatges/Ciutat/cityTiles_111.png" id="109_he388"]
-[ext_resource type="Texture2D" uid="uid://ckcvw3tp4ks85" path="res://imatges/Buidings/buildingTiles_075.png" id="109_x1su0"]
 [ext_resource type="Texture2D" uid="uid://duppvm7t83203" path="res://imatges/Ciutat/cityTiles_112.png" id="110_283ql"]
 [ext_resource type="Texture2D" uid="uid://jyswxptg44tr" path="res://imatges/Ciutat/cityTiles_113.png" id="111_fd4ck"]
 [ext_resource type="Texture2D" uid="uid://ij8ca77ty13f" path="res://imatges/Ciutat/cityTiles_116.png" id="114_du7f1"]
@@ -110,22 +102,31 @@
 [ext_resource type="Texture2D" uid="uid://co85r2l738f0d" path="res://imatges/Ciutat/cityTiles_126.png" id="124_p63it"]
 [ext_resource type="Texture2D" uid="uid://d7jjanv487kv" path="res://imatges/Ciutat/cityTiles_127.png" id="125_hvgaf"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ck0r0"]
+load_path = "res://.godot/imported/buildingTiles_001.png-60909793892221fe223f268ccb5d4613.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5lkow"]
-texture = ExtResource("1_5qqrl")
+texture = SubResource("CompressedTexture2D_ck0r0")
 texture_region_size = Vector2i(133, 127)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_frxpk"]
+load_path = "res://.godot/imported/buildingTiles_002.png-c89717b7bdae21fa239be309f86e63e8.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_erhxx"]
-texture = ExtResource("2_2afwp")
+texture = SubResource("CompressedTexture2D_frxpk")
 texture_region_size = Vector2i(132, 127)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_a4qb0"]
+load_path = "res://.godot/imported/buildingTiles_003.png-e735938dca12ba810831651ad3d4e918.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ps05p"]
-texture = ExtResource("3_8mfs3")
+texture = SubResource("CompressedTexture2D_a4qb0")
 texture_region_size = Vector2i(132, 127)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -594,8 +595,11 @@ texture_region_size = Vector2i(133, 101)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 0:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_r2f8y")
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ew5uo"]
+load_path = "res://.godot/imported/buildingTiles_004.png-6f2196c3addd8a45048b6110da5952bc.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_15sjg"]
-texture = ExtResource("40_3mlwb")
+texture = SubResource("CompressedTexture2D_ew5uo")
 texture_region_size = Vector2i(132, 127)
 use_texture_padding = false
 0:0/0 = 0
@@ -1570,23 +1574,35 @@ texture_region_size = Vector2i(132, 101)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -32.5, -66, 0, 0, 32.5, 66, 0)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0036h"]
+load_path = "res://.godot/imported/buildingTiles_005.png-31c4720bd9dd38c545a6ce6a1239dbb6.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_775ny"]
-texture = ExtResource("106_oe0f3")
+texture = SubResource("CompressedTexture2D_0036h")
 texture_region_size = Vector2i(99, 54)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yo6pe"]
+load_path = "res://.godot/imported/buildingTiles_006.png-cde258f52cb1ee55be70f36c7f3f2bc7.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_opcls"]
-texture = ExtResource("107_ki0m3")
+texture = SubResource("CompressedTexture2D_yo6pe")
 texture_region_size = Vector2i(132, 65)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3n1mw"]
+load_path = "res://.godot/imported/buildingTiles_074.png-e5d4d38d760a69d9915d83174c32147e.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_th6l1"]
-texture = ExtResource("108_sua8h")
+texture = SubResource("CompressedTexture2D_3n1mw")
 texture_region_size = Vector2i(132, 65)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2gpcb"]
+load_path = "res://.godot/imported/buildingTiles_075.png-9d33d691de9e135d75a6425ff5430711.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dc2l3"]
-texture = ExtResource("109_x1su0")
+texture = SubResource("CompressedTexture2D_2gpcb")
 texture_region_size = Vector2i(132, 65)
 
 [sub_resource type="TileSet" id="TileSet_t0bsg"]

@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://ckwg220lfr1gy"
-path="res://.godot/imported/Race Sport.ttf-658a7178a928979d1ac9d7512bb4459e.fontdata"
+path="res://.godot/imported/Race Sport.ttf-aa6ab2e6ddee65d8b1059ee5d59cafe1.fontdata"
 
 [deps]
 
-source_file="res://Race Sport.ttf"
-dest_files=["res://.godot/imported/Race Sport.ttf-658a7178a928979d1ac9d7512bb4459e.fontdata"]
+source_file="res://imatges/Race Sport.ttf"
+dest_files=["res://.godot/imported/Race Sport.ttf-aa6ab2e6ddee65d8b1059ee5d59cafe1.fontdata"]
 
 [params]
 

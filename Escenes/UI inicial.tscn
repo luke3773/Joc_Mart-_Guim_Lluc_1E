@@ -85,9 +85,8 @@ flat = true
 [node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Benvinguts! L'objectiu 
-del joc és que el lladre s'escapi del policia i que el policia
-atrapi el lladre, abans que passin dos minuts!
+text = "Benvinguts! El lladre ha de moure's en la direcció indicada
+ per la fletxa sense que l'atrapi el policia.
 Passeu per sobre de les fletxes grogues per obtenir més 
 velocitati eviteu els plàtans si no voleu frenar!
 Si voleu pausar el joc podeu clicar la tecla \"Esc\".

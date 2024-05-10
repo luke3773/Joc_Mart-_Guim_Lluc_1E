@@ -13,7 +13,7 @@ config_version=5
 config/name="Joc_Martí_Guim_Lluc_1E"
 run/main_scene="res://Escenes/joc.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://imatges/icon.svg"
 
 [autoload]
 

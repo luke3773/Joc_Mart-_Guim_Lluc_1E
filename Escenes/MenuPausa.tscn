@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bjhn1jmpclpww"]
 
 [ext_resource type="Texture2D" uid="uid://cpyr88mirun7u" path="res://imatges/UI/grey_button15.png" id="1_ayb01"]
-[ext_resource type="Script" path="res://MenuPausa.gd" id="1_j5rgy"]
+[ext_resource type="Script" path="res://Escenes/MenuPausa.gd" id="1_j5rgy"]
 [ext_resource type="Texture2D" uid="uid://ca7v32sck6qrk" path="res://imatges/UI/grey_panel.png" id="2_is5vk"]
 
 [node name="MenuPausa" type="CanvasLayer"]

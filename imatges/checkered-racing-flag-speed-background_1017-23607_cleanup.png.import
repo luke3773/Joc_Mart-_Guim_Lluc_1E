@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckcvw3tp4ks85"
-path="res://.godot/imported/buildingTiles_075.png-9d33d691de9e135d75a6425ff5430711.ctex"
+uid="uid://db05gegcg75j1"
+path="res://.godot/imported/checkered-racing-flag-speed-background_1017-23607_cleanup.png-34bbe98f6e167f11b8fb7c1e613e2ac1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imatges/Buidings/buildingTiles_075.png"
-dest_files=["res://.godot/imported/buildingTiles_075.png-9d33d691de9e135d75a6425ff5430711.ctex"]
+source_file="res://imatges/checkered-racing-flag-speed-background_1017-23607_cleanup.png"
+dest_files=["res://.godot/imported/checkered-racing-flag-speed-background_1017-23607_cleanup.png-34bbe98f6e167f11b8fb7c1e613e2ac1.ctex"]
 
 [params]
 

@@ -13,4 +13,4 @@ func _process(delta):
 
 func _on_body_entered(body):
 	if body.type == 'lladre':
-		get_tree().change_scene_to_file("res://EscenaFinalLladre.tscn")
+		get_tree().change_scene_to_file("res://Escenes/EscenaFinalLladre.tscn")

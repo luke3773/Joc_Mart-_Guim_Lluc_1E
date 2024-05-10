@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://i04xv7t02ivk"]
 
 [ext_resource type="Script" path="res://Escenes/EscenaFinalPoli.gd" id="1_1oc0l"]
-[ext_resource type="FontFile" uid="uid://ckwg220lfr1gy" path="res://Race Sport.ttf" id="1_mmngk"]
-[ext_resource type="Texture2D" uid="uid://db05gegcg75j1" path="res://checkered-racing-flag-speed-background_1017-23607_cleanup.png" id="2_byqy6"]
+[ext_resource type="FontFile" uid="uid://ckwg220lfr1gy" path="res://imatges/Race Sport.ttf" id="1_mmngk"]
+[ext_resource type="Texture2D" uid="uid://db05gegcg75j1" path="res://imatges/checkered-racing-flag-speed-background_1017-23607_cleanup.png" id="2_byqy6"]
 
 [node name="EscenaFinalPoli" type="Node2D"]
 script = ExtResource("1_1oc0l")
