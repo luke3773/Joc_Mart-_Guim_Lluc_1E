@@ -20,47 +20,8 @@ script = ExtResource("1_2j0rd")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 offset_right = 1152.0
-offset_bottom = 218.0
+offset_bottom = 192.0
 alignment = 1
-
-[node name="GreenButton00" type="Sprite2D" parent="VBoxContainer"]
-position = Vector2(850, 304)
-texture = ExtResource("1_imo52")
-
-[node name="Label" type="Label" parent="VBoxContainer/GreenButton00"]
-texture_filter = 1
-offset_left = -50.0
-offset_top = -16.0
-offset_right = 48.0
-offset_bottom = 19.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 25
-text = "LLADRE"
-
-[node name="Tile0166" type="Sprite2D" parent="VBoxContainer/GreenButton00"]
-texture_filter = 1
-position = Vector2(0, 64)
-scale = Vector2(4, 4)
-texture = ExtResource("2_7kcvh")
-
-[node name="Tile0167" type="Sprite2D" parent="VBoxContainer/GreenButton00"]
-texture_filter = 1
-position = Vector2(80, 136)
-scale = Vector2(4, 4)
-texture = ExtResource("3_c24dx")
-
-[node name="Tile0168" type="Sprite2D" parent="VBoxContainer/GreenButton00"]
-texture_filter = 1
-position = Vector2(0, 136)
-scale = Vector2(4, 4)
-texture = ExtResource("4_sj1ct")
-
-[node name="Tile0169" type="Sprite2D" parent="VBoxContainer/GreenButton00"]
-texture_filter = 1
-position = Vector2(-80, 136)
-scale = Vector2(4, 4)
-texture = ExtResource("5_j7ded")
 
 [node name="BlueButton00" type="Sprite2D" parent="VBoxContainer"]
 position = Vector2(325, 304)
@@ -69,9 +30,9 @@ texture = ExtResource("6_6461p")
 [node name="Label" type="Label" parent="VBoxContainer/BlueButton00"]
 texture_filter = 1
 offset_left = -49.0
-offset_top = -16.0
+offset_top = -17.0
 offset_right = 49.0
-offset_bottom = 19.0
+offset_bottom = 18.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 25
@@ -134,5 +95,44 @@ Si voleu pausar el joc podeu clicar la tecla \"Esc\".
 horizontal_alignment = 1
 vertical_alignment = 1
 justification_flags = 3
+
+[node name="GreenButton00" type="Sprite2D" parent="."]
+position = Vector2(848, 304)
+texture = ExtResource("1_imo52")
+
+[node name="Label2" type="Label" parent="GreenButton00"]
+texture_filter = 1
+offset_left = -46.0
+offset_top = -17.0
+offset_right = 47.0
+offset_bottom = 18.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "LLADRE"
+
+[node name="Tile0169" type="Sprite2D" parent="GreenButton00"]
+texture_filter = 1
+position = Vector2(-78, 136)
+scale = Vector2(4, 4)
+texture = ExtResource("5_j7ded")
+
+[node name="Tile0168" type="Sprite2D" parent="GreenButton00"]
+texture_filter = 1
+position = Vector2(2, 136)
+scale = Vector2(4, 4)
+texture = ExtResource("4_sj1ct")
+
+[node name="Tile0167" type="Sprite2D" parent="GreenButton00"]
+texture_filter = 1
+position = Vector2(82, 136)
+scale = Vector2(4, 4)
+texture = ExtResource("3_c24dx")
+
+[node name="Tile0166" type="Sprite2D" parent="GreenButton00"]
+texture_filter = 1
+position = Vector2(2, 64)
+scale = Vector2(4, 4)
+texture = ExtResource("2_7kcvh")
 
 [connection signal="pressed" from="VBoxContainer/GreyButton15/Button" to="." method="_on_button_pressed"]
