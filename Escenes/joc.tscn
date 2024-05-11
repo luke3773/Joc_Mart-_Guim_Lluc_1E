@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://diiiaqqe5hyxn"]
+[gd_scene load_steps=12 format=3 uid="uid://diiiaqqe5hyxn"]
 
 [ext_resource type="Script" path="res://Escenes/joc.gd" id="1_as7km"]
 [ext_resource type="PackedScene" uid="uid://cvionj5bjd3gm" path="res://Escenes/MapaDefinitiu.tscn" id="2_3oqj6"]
@@ -10,12 +10,13 @@
 [ext_resource type="PackedScene" uid="uid://cdpa6cjjidvq6" path="res://Escenes/UI inicial.tscn" id="8_vyb3e"]
 [ext_resource type="PackedScene" uid="uid://bjhn1jmpclpww" path="res://Escenes/MenuPausa.tscn" id="9_5anjm"]
 [ext_resource type="AudioStream" uid="uid://ivaw4d7qiyap" path="res://musica_fons.mp3" id="10_wikiw"]
+[ext_resource type="PackedScene" uid="uid://kw0f5idem5f8" path="res://Escenes/Objectius.tscn" id="11_qihsp"]
 
 [node name="joc" type="Node2D"]
 script = ExtResource("1_as7km")
 
 [node name="MapaDefinitiu" parent="." instance=ExtResource("2_3oqj6")]
-position = Vector2(0, -1)
+position = Vector2(374, -789)
 
 [node name="Punts" type="Node2D" parent="MapaDefinitiu"]
 position = Vector2(1500, 394)
@@ -31,14 +32,14 @@ position = Vector2(-149, -87)
 position = Vector2(-549, -553)
 
 [node name="areafinal" parent="." instance=ExtResource("7_b182x")]
-position = Vector2(5845.23, -3058)
+position = Vector2(6219, -3847)
 scale = Vector2(0.3, 0.3)
 
 [node name="lladre" parent="." instance=ExtResource("2_assmv")]
-position = Vector2(-464, 880)
+position = Vector2(-76, 87)
 
 [node name="policia" parent="." node_paths=PackedStringArray("lladre") instance=ExtResource("7_l5fy0")]
-position = Vector2(-665, 981)
+position = Vector2(-283, 190)
 lladre = NodePath("../lladre")
 
 [node name="camera_multiple" parent="." instance=ExtResource("5_me3fj")]
@@ -54,4 +55,9 @@ max_zoom = 100.0
 [node name="MenuPausa" parent="." instance=ExtResource("9_5anjm")]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+process_mode = 3
 stream = ExtResource("10_wikiw")
+volume_db = -20.0
+autoplay = true
+
+[node name="Objectius" parent="." instance=ExtResource("11_qihsp")]
