@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://bno38xu6pw1yj"]
+[gd_scene load_steps=26 format=3 uid="uid://bno38xu6pw1yj"]
 
 [ext_resource type="Script" path="res://Escenes/lladre.gd" id="1_dgc01"]
 [ext_resource type="Texture2D" uid="uid://b5yuf88l4ekal" path="res://imatges/fletxa_provisional.png" id="2_dfipn"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://jy23gc7q8ecm" path="res://imatges/Lladre/carSilver6_003.png" id="10_g82x8"]
 [ext_resource type="PackedScene" uid="uid://de0codsgko7oy" path="res://Escenes/trail.tscn" id="11_lmyrt"]
 [ext_resource type="AudioStream" uid="uid://26swj6h1ki48" path="res://401556__giocosound__sfx_car_engine_outside_rpmlow.wav" id="12_wb8ta"]
+[ext_resource type="PackedScene" uid="uid://clwvghqtwirgo" path="res://Escenes/areapoli.tscn" id="13_2cv80"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x4p0f"]
 size = Vector2(29, 24)
@@ -438,3 +439,5 @@ stream = ExtResource("12_wb8ta")
 script = SubResource("GDScript_tycnv")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[node name="Area2D" parent="." instance=ExtResource("13_2cv80")]

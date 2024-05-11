@@ -38,10 +38,10 @@ scale = Vector2(0.3, 0.3)
 [node name="CanvasLayer" parent="." instance=ExtResource("12_0ttc2")]
 
 [node name="lladre" parent="." instance=ExtResource("2_assmv")]
-position = Vector2(-76, 87)
+position = Vector2(-61, 80)
 
 [node name="policia" parent="." node_paths=PackedStringArray("lladre") instance=ExtResource("7_l5fy0")]
-position = Vector2(-283, 190)
+position = Vector2(-323, 213)
 lladre = NodePath("../lladre")
 
 [node name="camera_multiple" parent="." instance=ExtResource("5_me3fj")]

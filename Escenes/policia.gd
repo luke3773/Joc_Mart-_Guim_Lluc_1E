@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const type = 'policia'
+const type = 'poli'
 
 const max_vel = 500
 var acceleracio = 0

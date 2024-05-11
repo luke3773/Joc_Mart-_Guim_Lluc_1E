@@ -95,3 +95,8 @@ func _on_accelerador_body_entered(body):
 	var nombre_punts = llista_punts.size()
 	
 	$accelerador.global_position = llista_punts[randi_range(0, nombre_punts-1)].global_position
+
+
+func _on_col·lisió_poli_body_entered(body):
+	if body.type == 'policia':
+		get_tree().change_scene_to_file("res://Escenes/EscenaFinalPoli.tscn")

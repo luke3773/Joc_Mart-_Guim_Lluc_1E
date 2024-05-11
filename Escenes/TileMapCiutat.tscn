@@ -1,4 +1,4 @@
-[gd_scene load_steps=290 format=3 uid="uid://dydfk5twbpeu6"]
+[gd_scene load_steps=275 format=3 uid="uid://dydfk5twbpeu6"]
 
 [ext_resource type="Texture2D" uid="uid://ci2jxjyprp3w1" path="res://imatges/Ciutat/cityTiles_000.png" id="1_sw5w4"]
 [ext_resource type="Texture2D" uid="uid://dt16ju7oi1q3r" path="res://imatges/Ciutat/cityTiles_001.png" id="2_poujw"]
@@ -85,6 +85,7 @@
 [ext_resource type="Texture2D" uid="uid://ek8pdq3bjfjy" path="res://imatges/Ciutat/cityTiles_100.png" id="98_8dv02"]
 [ext_resource type="Texture2D" uid="uid://bhf3ex5qxj2pb" path="res://imatges/Ciutat/cityTiles_101.png" id="99_venp8"]
 [ext_resource type="Texture2D" uid="uid://08nbw7cck5i8" path="res://imatges/Ciutat/cityTiles_103.png" id="101_bqec3"]
+[ext_resource type="Script" path="res://Escenes/TileMapCiutat.gd" id="102_8mx0w"]
 [ext_resource type="Texture2D" uid="uid://d83amsxdkapa" path="res://imatges/Ciutat/cityTiles_104.png" id="102_66hum"]
 [ext_resource type="Texture2D" uid="uid://cqorllp3s8xvi" path="res://imatges/Ciutat/cityTiles_106.png" id="104_2ur5n"]
 [ext_resource type="Texture2D" uid="uid://cq2yh4jiyie7" path="res://imatges/Ciutat/cityTiles_107.png" id="105_x6kha"]
@@ -101,33 +102,6 @@
 [ext_resource type="Texture2D" uid="uid://btlykxprx06jh" path="res://imatges/Ciutat/cityTiles_125.png" id="123_c7h1o"]
 [ext_resource type="Texture2D" uid="uid://co85r2l738f0d" path="res://imatges/Ciutat/cityTiles_126.png" id="124_p63it"]
 [ext_resource type="Texture2D" uid="uid://d7jjanv487kv" path="res://imatges/Ciutat/cityTiles_127.png" id="125_hvgaf"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ck0r0"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5lkow"]
-texture = SubResource("CompressedTexture2D_ck0r0")
-texture_region_size = Vector2i(133, 127)
-0:0/0 = 0
-0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:0/0/physics_layer_0/angular_velocity = 0.0
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_frxpk"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_erhxx"]
-texture = SubResource("CompressedTexture2D_frxpk")
-texture_region_size = Vector2i(132, 127)
-0:0/0 = 0
-0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:0/0/physics_layer_0/angular_velocity = 0.0
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_a4qb0"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ps05p"]
-texture = SubResource("CompressedTexture2D_a4qb0")
-texture_region_size = Vector2i(132, 127)
-0:0/0 = 0
-0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:0/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_hr7e6"]
 vertices = PackedVector2Array(66, 0, 0, 33, -66, 0, 0, -33)
@@ -512,6 +486,7 @@ texture_region_size = Vector2i(132, 101)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(2.5, -51.5, -66.5, -17, -49, -8.5, 0, -33, 30.5, -18, -15.5, 7.5, 0, 16, 67, -17)
 0:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_ghwlt")
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_ilxnt"]
@@ -591,16 +566,6 @@ texture_region_size = Vector2i(133, 101)
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 0:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_r2f8y")
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ew5uo"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_15sjg"]
-texture = SubResource("CompressedTexture2D_ew5uo")
-texture_region_size = Vector2i(132, 127)
-use_texture_padding = false
-0:0/0 = 0
-0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:0/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_x0mij"]
 vertices = PackedVector2Array(66, 0, 0, 33, -66, 0, 0, -33)
@@ -1570,33 +1535,6 @@ texture_region_size = Vector2i(132, 101)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -32.5, -66, 0, 0, 32.5, 66, 0)
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0036h"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_775ny"]
-texture = SubResource("CompressedTexture2D_0036h")
-texture_region_size = Vector2i(99, 54)
-0:0/0 = 0
-0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-0:0/0/physics_layer_0/angular_velocity = 0.0
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yo6pe"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_opcls"]
-texture = SubResource("CompressedTexture2D_yo6pe")
-texture_region_size = Vector2i(132, 65)
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3n1mw"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_th6l1"]
-texture = SubResource("CompressedTexture2D_3n1mw")
-texture_region_size = Vector2i(132, 65)
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2gpcb"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dc2l3"]
-texture = SubResource("CompressedTexture2D_2gpcb")
-texture_region_size = Vector2i(132, 65)
-
 [sub_resource type="TileSet" id="TileSet_t0bsg"]
 tile_shape = 1
 tile_layout = 5
@@ -1712,14 +1650,6 @@ sources/374 = SubResource("TileSetAtlasSource_p5opr")
 sources/375 = SubResource("TileSetAtlasSource_vfclw")
 sources/376 = SubResource("TileSetAtlasSource_bj2py")
 sources/377 = SubResource("TileSetAtlasSource_chlx8")
-sources/0 = SubResource("TileSetAtlasSource_5lkow")
-sources/1 = SubResource("TileSetAtlasSource_erhxx")
-sources/2 = SubResource("TileSetAtlasSource_ps05p")
-sources/3 = SubResource("TileSetAtlasSource_15sjg")
-sources/4 = SubResource("TileSetAtlasSource_775ny")
-sources/5 = SubResource("TileSetAtlasSource_opcls")
-sources/6 = SubResource("TileSetAtlasSource_th6l1")
-sources/7 = SubResource("TileSetAtlasSource_dc2l3")
 
 [node name="mapa" type="TileMap"]
 y_sort_enabled = true
@@ -1732,3 +1662,4 @@ layer_0/tile_data = PackedInt32Array(655369, 374, 0, 589833, 346, 0, 524299, 372
 layer_1/name = "Layer 1"
 layer_1/y_sort_enabled = true
 layer_1/tile_data = PackedInt32Array()
+script = ExtResource("102_8mx0w")
