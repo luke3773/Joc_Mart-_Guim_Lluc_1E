@@ -14,15 +14,15 @@ scale = Vector2(4, 2.96)
 texture = ExtResource("1_2yxpm")
 
 [node name="GreyPanel2" type="Sprite2D" parent="."]
-position = Vector2(576, 124)
-scale = Vector2(4.48, 1.2)
+position = Vector2(576, 112)
+scale = Vector2(5.92, 1.44)
 texture = ExtResource("1_2yxpm")
 
 [node name="Label" type="Label" parent="."]
 offset_left = 392.0
 offset_top = 283.0
 offset_right = 762.0
-offset_bottom = 480.0
+offset_bottom = 530.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 15
 text = "-  El lladre ha de moure's en la direcció indicada
@@ -38,9 +38,9 @@ frenar!"
 
 [node name="Label2" type="Label" parent="."]
 offset_left = 396.0
-offset_top = 102.0
+offset_top = 86.0
 offset_right = 755.0
-offset_bottom = 160.0
+offset_bottom = 144.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_4xn6w")
 theme_override_font_sizes/font_size = 50

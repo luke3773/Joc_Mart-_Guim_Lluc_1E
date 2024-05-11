@@ -65,12 +65,12 @@ texture = ExtResource("10_7c4y2")
 
 [node name="GreyPanel" type="Sprite2D" parent="VBoxContainer"]
 texture_filter = 1
-position = Vector2(578, 84)
+position = Vector2(576, 112)
 scale = Vector2(5.12, 1.36)
 texture = ExtResource("11_umyjn")
 
 [node name="GreyButton15" type="Sprite2D" parent="VBoxContainer"]
-position = Vector2(577, 578)
+position = Vector2(576, 552)
 texture = ExtResource("12_kjabf")
 
 [node name="Button" type="Button" parent="VBoxContainer/GreyButton15"]
@@ -82,16 +82,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 25
 text = "INICIAR"
 flat = true
-
-[node name="Label" type="Label" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("9_k0osa")
-theme_override_font_sizes/font_size = 50
-text = "CRAZY CHASE"
-horizontal_alignment = 1
-vertical_alignment = 1
-justification_flags = 3
+metadata/_edit_use_anchors_ = true
 
 [node name="GreenButton00" type="Sprite2D" parent="."]
 position = Vector2(848, 304)
@@ -131,5 +122,17 @@ texture_filter = 1
 position = Vector2(2, 64)
 scale = Vector2(4, 4)
 texture = ExtResource("2_7kcvh")
+
+[node name="Label" type="Label" parent="."]
+offset_top = 84.0
+offset_right = 1152.0
+offset_bottom = 142.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_k0osa")
+theme_override_font_sizes/font_size = 50
+text = "CRAZY CHASE"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 3
 
 [connection signal="pressed" from="VBoxContainer/GreyButton15/Button" to="." method="_on_button_pressed"]

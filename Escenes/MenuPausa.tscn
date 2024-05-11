@@ -1,16 +1,18 @@
-[gd_scene load_steps=5 format=3 uid="uid://bjhn1jmpclpww"]
+[gd_scene load_steps=7 format=3 uid="uid://bjhn1jmpclpww"]
 
 [ext_resource type="Texture2D" uid="uid://cpyr88mirun7u" path="res://imatges/UI/grey_button15.png" id="1_ayb01"]
 [ext_resource type="Script" path="res://Escenes/MenuPausa.gd" id="1_j5rgy"]
 [ext_resource type="Texture2D" uid="uid://ca7v32sck6qrk" path="res://imatges/UI/grey_panel.png" id="2_is5vk"]
 [ext_resource type="FontFile" uid="uid://ckwg220lfr1gy" path="res://imatges/Race Sport.ttf" id="4_mpc53"]
+[ext_resource type="PackedScene" uid="uid://kw0f5idem5f8" path="res://Escenes/Objectius.tscn" id="5_e3hdq"]
+[ext_resource type="Texture2D" uid="uid://b3ej2hnlckiw8" path="res://imatges/UI/tile_0169.png" id="6_awuno"]
 
 [node name="MenuPausa" type="CanvasLayer"]
 process_mode = 3
 script = ExtResource("1_j5rgy")
 
 [node name="Continua" type="Sprite2D" parent="."]
-position = Vector2(576, 472.5)
+position = Vector2(577, 404)
 texture = ExtResource("1_ayb01")
 
 [node name="Continua" type="Button" parent="Continua"]
@@ -24,12 +26,13 @@ offset_top = -16.0
 offset_right = 70.0
 offset_bottom = 15.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
 text = "CONTINUAR"
 flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Sortir" type="Sprite2D" parent="."]
-position = Vector2(575, 545)
+position = Vector2(576, 476.5)
 texture = ExtResource("1_ayb01")
 
 [node name="Sortir" type="Button" parent="Sortir"]
@@ -43,27 +46,18 @@ offset_top = -16.0
 offset_right = 70.0
 offset_bottom = 15.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
 text = "SORTIR"
 flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="GreyPanel" type="Sprite2D" parent="."]
-position = Vector2(576, 128)
-scale = Vector2(5.92, 1.28)
+position = Vector2(576, 112)
+scale = Vector2(5.92, 1.44)
 texture = ExtResource("2_is5vk")
 
-[node name="Label" type="Label" parent="."]
-offset_left = 312.0
-offset_top = 104.0
-offset_right = 845.0
-offset_bottom = 162.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_mpc53")
-theme_override_font_sizes/font_size = 50
-text = "MENÚ DE PAUSA"
-
 [node name="Objectius" type="Sprite2D" parent="."]
-position = Vector2(576, 400)
+position = Vector2(577, 331.5)
 texture = ExtResource("1_ayb01")
 
 [node name="Objectius" type="Button" parent="Objectius"]
@@ -72,9 +66,39 @@ offset_top = -24.0
 offset_right = 94.0
 offset_bottom = 24.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
 text = "OBJECTIUS"
 flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Objectius2" parent="." instance=ExtResource("5_e3hdq")]
+script = null
+
+[node name="Endarrere" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576, 608)
+scale = Vector2(4, 4)
+texture = ExtResource("6_awuno")
+
+[node name="Endarrere" type="Button" parent="Endarrere"]
+offset_left = -7.0
+offset_top = -7.0
+offset_right = 6.0
+offset_bottom = 7.0
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 312.0
+offset_top = 88.0
+offset_right = 845.0
+offset_bottom = 146.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mpc53")
+theme_override_font_sizes/font_size = 50
+text = "MENÚ DE PAUSA"
 
 [connection signal="pressed" from="Continua/Continua" to="." method="_on_continua_pressed"]
 [connection signal="pressed" from="Sortir/Sortir" to="." method="_on_sortir_pressed"]
-[connection signal="pressed" from="Objectius/Objectius" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Objectius/Objectius" to="." method="_on_objectius_pressed"]
+[connection signal="pressed" from="Endarrere/Endarrere" to="." method="_on_endarrere_pressed"]
