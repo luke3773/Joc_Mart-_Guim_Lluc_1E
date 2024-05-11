@@ -436,3 +436,5 @@ libraries = {
 visible = false
 stream = ExtResource("12_wb8ta")
 script = SubResource("GDScript_tycnv")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]

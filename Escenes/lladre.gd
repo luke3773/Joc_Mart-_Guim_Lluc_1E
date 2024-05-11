@@ -73,8 +73,7 @@ func _process(delta):
 	$animacio.play(troba_animacio(angle, angle_dict))
 		
 	$fletxa.look_at(punt)
-	
-	print(max_acc)
+
 
 
 func _on_area_2d_area_entered(area):
