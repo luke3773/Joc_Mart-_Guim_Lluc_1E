@@ -24,3 +24,10 @@ func _on_sortir_pressed():
 func _on_continua_pressed():
 	visible = false
 	get_tree().paused = false
+
+
+func _on_objectius_pressed():
+	get_node("res://Escenes/Objectius.tscn").visible = true
+	get_tree().change_scene_to_file("res://Escenes/Objectius.tscn")
+
+	

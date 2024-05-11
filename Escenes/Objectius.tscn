@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://kw0f5idem5f8"]
+
+[ext_resource type="Texture2D" uid="uid://ca7v32sck6qrk" path="res://imatges/UI/grey_panel.png" id="1_2yxpm"]
+[ext_resource type="Script" path="res://Escenes/Objectius.gd" id="1_vw7j1"]
+[ext_resource type="FontFile" uid="uid://ckwg220lfr1gy" path="res://imatges/Race Sport.ttf" id="2_4xn6w"]
+
+[node name="Objectius" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_vw7j1")
+
+[node name="GreyPanel" type="Sprite2D" parent="."]
+position = Vector2(576, 380)
+scale = Vector2(4, 2.48)
+texture = ExtResource("1_2yxpm")
+
+[node name="GreyPanel2" type="Sprite2D" parent="."]
+position = Vector2(576, 124)
+scale = Vector2(4.48, 1.2)
+texture = ExtResource("1_2yxpm")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 392.0
+offset_top = 283.0
+offset_right = 762.0
+offset_bottom = 480.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 15
+text = "-  El lladre ha de moure's en la direcció indicada
+per la fletxa i arribar al garatge sense que l'atrapi
+el policia.
+- El policia ha d'atrapar el lladre abans que aquest 
+pugui arribar al garatge.
+- Passeu per sobre de les fletxes grogues per
+obtenir més velocitati eviteu els plàtans si no voleu
+frenar!"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 396.0
+offset_top = 102.0
+offset_right = 755.0
+offset_bottom = 160.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_4xn6w")
+theme_override_font_sizes/font_size = 50
+text = "OBJECTIUS"

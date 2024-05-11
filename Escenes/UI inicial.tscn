@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://cdpa6cjjidvq6"]
+[gd_scene load_steps=15 format=3 uid="uid://cdpa6cjjidvq6"]
 
 [ext_resource type="Script" path="res://Escenes/UI inicial.gd" id="1_2j0rd"]
 [ext_resource type="Texture2D" uid="uid://b4ipv46dqj1pc" path="res://imatges/UI/green_button00.png" id="1_imo52"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://ckt08gwt1cc6o" path="res://imatges/UI/tile_0086.png" id="7_v117f"]
 [ext_resource type="Texture2D" uid="uid://ig50rc5oawrl" path="res://imatges/UI/tile_0120.png" id="8_wvou8"]
 [ext_resource type="Texture2D" uid="uid://rj41g4wxm5go" path="res://imatges/UI/tile_0121.png" id="9_bg53j"]
+[ext_resource type="FontFile" uid="uid://ckwg220lfr1gy" path="res://imatges/Race Sport.ttf" id="9_k0osa"]
 [ext_resource type="Texture2D" uid="uid://dnk3dbmlkglqr" path="res://imatges/UI/tile_0122.png" id="10_7c4y2"]
 [ext_resource type="Texture2D" uid="uid://ca7v32sck6qrk" path="res://imatges/UI/grey_panel.png" id="11_umyjn"]
 [ext_resource type="Texture2D" uid="uid://cpyr88mirun7u" path="res://imatges/UI/grey_button15.png" id="12_kjabf"]
@@ -64,8 +65,8 @@ texture = ExtResource("10_7c4y2")
 
 [node name="GreyPanel" type="Sprite2D" parent="VBoxContainer"]
 texture_filter = 1
-position = Vector2(578, 116)
-scale = Vector2(5.12, 2)
+position = Vector2(578, 84)
+scale = Vector2(5.12, 1.36)
 texture = ExtResource("11_umyjn")
 
 [node name="GreyButton15" type="Sprite2D" parent="VBoxContainer"]
@@ -85,12 +86,9 @@ flat = true
 [node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Benvinguts! El lladre ha de moure's en la direcció indicada
- per la fletxa sense que l'atrapi el policia.
-Passeu per sobre de les fletxes grogues per obtenir més 
-velocitati eviteu els plàtans si no voleu frenar!
-Si voleu pausar el joc podeu clicar la tecla \"Esc\".
-"
+theme_override_fonts/font = ExtResource("9_k0osa")
+theme_override_font_sizes/font_size = 50
+text = "CRAZY CHASE"
 horizontal_alignment = 1
 vertical_alignment = 1
 justification_flags = 3
