@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://bno38xu6pw1yj"]
+[gd_scene load_steps=25 format=3 uid="uid://bno38xu6pw1yj"]
 
 [ext_resource type="Script" path="res://Escenes/lladre.gd" id="1_dgc01"]
 [ext_resource type="Texture2D" uid="uid://b5yuf88l4ekal" path="res://imatges/fletxa_provisional.png" id="2_dfipn"]
@@ -10,8 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://diglhn1toied1" path="res://imatges/Lladre/carSilver6_001.png" id="8_f7fqf"]
 [ext_resource type="Texture2D" uid="uid://bwhimv2jr44qn" path="res://imatges/Lladre/carSilver6_002.png" id="9_bg86x"]
 [ext_resource type="Texture2D" uid="uid://jy23gc7q8ecm" path="res://imatges/Lladre/carSilver6_003.png" id="10_g82x8"]
-[ext_resource type="AudioStream" uid="uid://cwqhngexnm5uq" path="res://accfinal.wav" id="11_k4uu0"]
 [ext_resource type="PackedScene" uid="uid://de0codsgko7oy" path="res://Escenes/trail.tscn" id="11_lmyrt"]
+[ext_resource type="AudioStream" uid="uid://26swj6h1ki48" path="res://401556__giocosound__sfx_car_engine_outside_rpmlow.wav" id="12_wb8ta"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x4p0f"]
 size = Vector2(29, 24)
@@ -388,11 +388,31 @@ _data = {
 "W": SubResource("Animation_op0vi")
 }
 
+[sub_resource type="GDScript" id="GDScript_tycnv"]
+script/source = "extends AudioStreamPlayer2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
 [node name="lladre" type="CharacterBody2D"]
 scale = Vector2(0.5, 0.5)
 collision_layer = 2
 collision_mask = 3
 script = ExtResource("1_dgc01")
+
+[node name="trail1" parent="." instance=ExtResource("11_lmyrt")]
+position = Vector2(-12, 0)
+
+[node name="trail2" parent="." instance=ExtResource("11_lmyrt")]
+position = Vector2(-12, 10)
 
 [node name="fletxa" type="Sprite2D" parent="."]
 position = Vector2(0, -30)
@@ -414,10 +434,5 @@ libraries = {
 
 [node name="acc" type="AudioStreamPlayer2D" parent="."]
 visible = false
-stream = ExtResource("11_k4uu0")
-
-[node name="trail1" parent="." instance=ExtResource("11_lmyrt")]
-position = Vector2(-12, 0)
-
-[node name="trail2" parent="." instance=ExtResource("11_lmyrt")]
-position = Vector2(-12, 10)
+stream = ExtResource("12_wb8ta")
+script = SubResource("GDScript_tycnv")

@@ -103,7 +103,6 @@
 [ext_resource type="Texture2D" uid="uid://d7jjanv487kv" path="res://imatges/Ciutat/cityTiles_127.png" id="125_hvgaf"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ck0r0"]
-load_path = "res://.godot/imported/buildingTiles_001.png-60909793892221fe223f268ccb5d4613.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5lkow"]
 texture = SubResource("CompressedTexture2D_ck0r0")
@@ -113,7 +112,6 @@ texture_region_size = Vector2i(133, 127)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_frxpk"]
-load_path = "res://.godot/imported/buildingTiles_002.png-c89717b7bdae21fa239be309f86e63e8.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_erhxx"]
 texture = SubResource("CompressedTexture2D_frxpk")
@@ -123,7 +121,6 @@ texture_region_size = Vector2i(132, 127)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_a4qb0"]
-load_path = "res://.godot/imported/buildingTiles_003.png-e735938dca12ba810831651ad3d4e918.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ps05p"]
 texture = SubResource("CompressedTexture2D_a4qb0")
@@ -596,7 +593,6 @@ texture_region_size = Vector2i(133, 101)
 0:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_r2f8y")
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ew5uo"]
-load_path = "res://.godot/imported/buildingTiles_004.png-6f2196c3addd8a45048b6110da5952bc.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_15sjg"]
 texture = SubResource("CompressedTexture2D_ew5uo")
@@ -1575,7 +1571,6 @@ texture_region_size = Vector2i(132, 101)
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -32.5, -66, 0, 0, 32.5, 66, 0)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0036h"]
-load_path = "res://.godot/imported/buildingTiles_005.png-31c4720bd9dd38c545a6ce6a1239dbb6.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_775ny"]
 texture = SubResource("CompressedTexture2D_0036h")
@@ -1585,21 +1580,18 @@ texture_region_size = Vector2i(99, 54)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yo6pe"]
-load_path = "res://.godot/imported/buildingTiles_006.png-cde258f52cb1ee55be70f36c7f3f2bc7.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_opcls"]
 texture = SubResource("CompressedTexture2D_yo6pe")
 texture_region_size = Vector2i(132, 65)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3n1mw"]
-load_path = "res://.godot/imported/buildingTiles_074.png-e5d4d38d760a69d9915d83174c32147e.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_th6l1"]
 texture = SubResource("CompressedTexture2D_3n1mw")
 texture_region_size = Vector2i(132, 65)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2gpcb"]
-load_path = "res://.godot/imported/buildingTiles_075.png-9d33d691de9e135d75a6425ff5430711.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dc2l3"]
 texture = SubResource("CompressedTexture2D_2gpcb")

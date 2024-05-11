@@ -39,12 +39,10 @@ func _process(delta):
 		velocity = velocity.rotated(-derrape)
 		
 	if Input.is_action_pressed("accelerar_p") and velocity.length() <= max_vel:
-		$acc_p.play()
 		acceleracio = 200
 		
 	if Input.is_action_pressed("accelerar_p") == false and velocity.length() > 0:
-		$acc_p.stop()
-		velocity = 0.95 * velocity
+		velocity = 0.98 * velocity
 		acceleracio = 0
 #		direccio.dot()
 	
@@ -57,6 +55,12 @@ func _process(delta):
 	
 	velocity += direccio.normalized() * acceleracio * delta
 	move_and_slide()
+	
+	var sound_db = velocity.length() / max_vel * 25 
+	$acc_p.set_volume_db(sound_db)
+	
+	if $acc_p.is_playing() == false:
+		$acc_p.play()
 	
 	var angle = direccio.angle()
 	

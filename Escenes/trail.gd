@@ -21,7 +21,7 @@ func _draw():
 		return
 		
 	var antialias = false
-	var c = modulate
+	var c = Color(0,0,0,0)
 	var s = float(points.size())
 	var adjusted = PackedVector2Array()
 	var colors = PackedColorArray()

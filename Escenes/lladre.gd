@@ -42,7 +42,6 @@ func _process(delta):
 		velocity = velocity.rotated(-derrape)
 		
 	if Input.is_action_pressed("accelerar") and velocity.length() <= max_vel:
-		$acc.play()
 		acceleracio = max_acc
 
 	if Input.is_action_pressed("accelerar") == false and velocity.length() > 0:
@@ -52,14 +51,20 @@ func _process(delta):
 	
 	if Input.is_action_pressed("frenar")  and velocity.length() > 0:
 		acceleracio = -100
-	if Input.is_action_pressed("accelerar") == false:
-		$acc.stop()
+
 	#$Direccio.clear_points()
 	#$Direccio.add_point(Vector2.ZERO)
 	#$Direccio.add_point(direccio * 100)
 	
+	
 	velocity += direccio.normalized() * acceleracio * delta
 	move_and_slide()
+	
+	var sound_db = velocity.length() / max_vel * 25 
+	$acc.set_volume_db(sound_db)
+	
+	if $acc.is_playing() == false:
+		$acc.play()
 	
 	var angle = direccio.angle()
 	
