@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://diiiaqqe5hyxn"]
+[gd_scene load_steps=13 format=3 uid="uid://diiiaqqe5hyxn"]
 
 [ext_resource type="Script" path="res://Escenes/joc.gd" id="1_as7km"]
 [ext_resource type="PackedScene" uid="uid://cvionj5bjd3gm" path="res://Escenes/MapaDefinitiu.tscn" id="2_3oqj6"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://bjhn1jmpclpww" path="res://Escenes/MenuPausa.tscn" id="9_5anjm"]
 [ext_resource type="AudioStream" uid="uid://ivaw4d7qiyap" path="res://musica_fons.mp3" id="10_wikiw"]
 [ext_resource type="PackedScene" uid="uid://kw0f5idem5f8" path="res://Escenes/Objectius.tscn" id="11_qihsp"]
+[ext_resource type="PackedScene" uid="uid://7t5mxsiuw6it" path="res://Escenes/Esc_canvas.tscn" id="12_0ttc2"]
 
 [node name="joc" type="Node2D"]
 script = ExtResource("1_as7km")
@@ -35,6 +36,8 @@ position = Vector2(-549, -553)
 position = Vector2(6219, -3847)
 scale = Vector2(0.3, 0.3)
 
+[node name="CanvasLayer" parent="." instance=ExtResource("12_0ttc2")]
+
 [node name="lladre" parent="." instance=ExtResource("2_assmv")]
 position = Vector2(-76, 87)
 
@@ -54,10 +57,10 @@ max_zoom = 100.0
 
 [node name="MenuPausa" parent="." instance=ExtResource("9_5anjm")]
 
+[node name="Objectius" parent="." instance=ExtResource("11_qihsp")]
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 process_mode = 3
 stream = ExtResource("10_wikiw")
-volume_db = -20.0
+volume_db = -10.0
 autoplay = true
-
-[node name="Objectius" parent="." instance=ExtResource("11_qihsp")]

@@ -9,8 +9,8 @@ process_mode = 3
 script = ExtResource("1_vw7j1")
 
 [node name="GreyPanel" type="Sprite2D" parent="."]
-position = Vector2(576, 380)
-scale = Vector2(4, 2.48)
+position = Vector2(576, 404)
+scale = Vector2(4, 2.96)
 texture = ExtResource("1_2yxpm")
 
 [node name="GreyPanel2" type="Sprite2D" parent="."]
@@ -30,6 +30,8 @@ per la fletxa i arribar al garatge sense que l'atrapi
 el policia.
 - El policia ha d'atrapar el lladre abans que aquest 
 pugui arribar al garatge.
+- Si el lladre surt del camp de visió del policia, la
+partida s'acaba i guanya el lladre.
 - Passeu per sobre de les fletxes grogues per
 obtenir més velocitati eviteu els plàtans si no voleu
 frenar!"

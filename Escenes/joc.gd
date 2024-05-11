@@ -14,4 +14,4 @@ func _ready():
 func _process(delta):
 	if $lladre/VisibleOnScreenNotifier2D.is_on_screen() == false:
 		get_tree().change_scene_to_file("res://Escenes/EscenaFinalLladre.tscn")
-	pass
+	
