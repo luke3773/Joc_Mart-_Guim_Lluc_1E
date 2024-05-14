@@ -25,7 +25,7 @@ offset_bottom = 192.0
 alignment = 1
 
 [node name="BlueButton00" type="Sprite2D" parent="VBoxContainer"]
-position = Vector2(325, 304)
+position = Vector2(240, 280)
 texture = ExtResource("6_6461p")
 
 [node name="Label" type="Label" parent="VBoxContainer/BlueButton00"]
@@ -38,6 +38,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 25
 text = "POLICIA"
+metadata/_edit_use_anchors_ = true
 
 [node name="Tile0086" type="Sprite2D" parent="VBoxContainer/BlueButton00"]
 texture_filter = 1
@@ -85,7 +86,7 @@ flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="GreenButton00" type="Sprite2D" parent="."]
-position = Vector2(848, 304)
+position = Vector2(912, 280)
 texture = ExtResource("1_imo52")
 
 [node name="Label2" type="Label" parent="GreenButton00"]
@@ -98,6 +99,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 25
 text = "LLADRE"
+metadata/_edit_use_anchors_ = true
 
 [node name="Tile0169" type="Sprite2D" parent="GreenButton00"]
 texture_filter = 1

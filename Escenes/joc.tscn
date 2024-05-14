@@ -56,8 +56,8 @@ stream = ExtResource("10_wikiw")
 volume_db = -10.0
 autoplay = true
 
-[node name="MenuPausa" parent="." instance=ExtResource("9_5anjm")]
+[node name="CanvasLayer" parent="." instance=ExtResource("12_0ttc2")]
 
 [node name="Control" parent="." instance=ExtResource("8_vyb3e")]
 
-[node name="CanvasLayer" parent="." instance=ExtResource("12_0ttc2")]
+[node name="MenuPausa" parent="." instance=ExtResource("9_5anjm")]

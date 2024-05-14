@@ -5,6 +5,7 @@ extends CanvasLayer
 func _ready():
 	visible = false
 	$Objectius2.visible = false
+	$Endarrere.visible = false
 
 
 
@@ -13,7 +14,8 @@ func _process(delta):
 	if Input.is_action_just_pressed("ui_cancel"):
 		visible = !visible
 		get_tree().paused = !get_tree().paused
-		$Endarrere.visible = false
+	if $Objectius2.visible == true:
+		$Endarrere.visible = true
 
 func _on_menu_principal_pressed():
 	get_tree().change_scene_to_file("res://Escenes/UI inicial.gd")

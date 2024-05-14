@@ -13,6 +13,11 @@ position = Vector2(576, 408)
 scale = Vector2(4, 2.96)
 texture = ExtResource("1_2yxpm")
 
+[node name="GreyPanel3" type="Sprite2D" parent="."]
+position = Vector2(576, 408)
+scale = Vector2(4, 2.96)
+texture = ExtResource("1_2yxpm")
+
 [node name="GreyPanel2" type="Sprite2D" parent="."]
 position = Vector2(576, 112)
 scale = Vector2(5.92, 1.44)
