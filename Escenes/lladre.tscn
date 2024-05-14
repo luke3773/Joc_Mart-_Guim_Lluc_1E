@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://bno38xu6pw1yj"]
+[gd_scene load_steps=25 format=3 uid="uid://bno38xu6pw1yj"]
 
 [ext_resource type="Script" path="res://Escenes/lladre.gd" id="1_dgc01"]
 [ext_resource type="Texture2D" uid="uid://b5yuf88l4ekal" path="res://imatges/fletxa_provisional.png" id="2_dfipn"]
@@ -389,20 +389,6 @@ _data = {
 "W": SubResource("Animation_op0vi")
 }
 
-[sub_resource type="GDScript" id="GDScript_tycnv"]
-script/source = "extends AudioStreamPlayer2D
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-"
-
 [node name="lladre" type="CharacterBody2D"]
 scale = Vector2(0.5, 0.5)
 collision_layer = 2
@@ -434,9 +420,7 @@ libraries = {
 [node name="accelerador_time" type="Timer" parent="."]
 
 [node name="acc" type="AudioStreamPlayer2D" parent="."]
-visible = false
 stream = ExtResource("12_wb8ta")
-script = SubResource("GDScript_tycnv")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 

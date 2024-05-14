@@ -56,7 +56,7 @@ func _process(delta):
 	velocity += direccio.normalized() * acceleracio * delta
 	move_and_slide()
 	
-	var sound_db = velocity.length() / max_vel * 25 
+	var sound_db = velocity.length() / max_vel * 10
 	$acc_p.set_volume_db(sound_db)
 	
 	if $acc_p.is_playing() == false:
