@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://i04xv7t02ivk"]
+[gd_scene load_steps=5 format=3 uid="uid://i04xv7t02ivk"]
 
 [ext_resource type="Script" path="res://Escenes/EscenaFinalPoli.gd" id="1_1oc0l"]
 [ext_resource type="FontFile" uid="uid://ckwg220lfr1gy" path="res://imatges/Race Sport.ttf" id="1_mmngk"]
 [ext_resource type="Texture2D" uid="uid://db05gegcg75j1" path="res://imatges/checkered-racing-flag-speed-background_1017-23607_cleanup.png" id="2_byqy6"]
+[ext_resource type="AudioStream" uid="uid://btb0d6e2rnjjp" path="res://game-over-man-136233.mp3" id="4_6hu75"]
 
 [node name="EscenaFinalPoli" type="Node2D"]
 script = ExtResource("1_1oc0l")
@@ -34,3 +35,25 @@ Victòria del Policia!"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
+
+[node name="Game_over" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_6hu75")
+
+[node name="Reiniciar" type="Button" parent="."]
+offset_left = 488.0
+offset_top = 500.0
+offset_right = 680.0
+offset_bottom = 544.0
+theme_override_font_sizes/font_size = 25
+text = "REINICIAR"
+
+[node name="Sortir" type="Button" parent="."]
+offset_left = 488.0
+offset_top = 560.0
+offset_right = 680.0
+offset_bottom = 603.0
+theme_override_font_sizes/font_size = 25
+text = "SORTIR"
+
+[connection signal="pressed" from="Reiniciar" to="." method="_on_reiniciar_pressed"]
+[connection signal="pressed" from="Sortir" to="." method="_on_sortir_pressed"]
