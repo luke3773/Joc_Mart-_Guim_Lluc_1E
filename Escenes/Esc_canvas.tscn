@@ -5,11 +5,7 @@
 [node name="CanvasLayer" type="CanvasLayer"]
 process_mode = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-offset_right = 1152.0
-offset_bottom = 648.0
-
-[node name="Tile0017" type="Sprite2D" parent="VBoxContainer"]
+[node name="Tile0017" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(24, 24)
 scale = Vector2(3, 3)

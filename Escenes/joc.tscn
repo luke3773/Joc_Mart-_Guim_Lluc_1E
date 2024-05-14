@@ -35,8 +35,6 @@ position = Vector2(-549, -553)
 position = Vector2(6219, -3847)
 scale = Vector2(0.3, 0.3)
 
-[node name="CanvasLayer" parent="." instance=ExtResource("12_0ttc2")]
-
 [node name="lladre" parent="." instance=ExtResource("2_assmv")]
 position = Vector2(-61, 80)
 
@@ -52,12 +50,14 @@ zoom_speed = 1.0
 min_zoom = 1.5
 max_zoom = 100.0
 
-[node name="Control" parent="." instance=ExtResource("8_vyb3e")]
-
-[node name="MenuPausa" parent="." instance=ExtResource("9_5anjm")]
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 process_mode = 3
 stream = ExtResource("10_wikiw")
 volume_db = -10.0
 autoplay = true
+
+[node name="MenuPausa" parent="." instance=ExtResource("9_5anjm")]
+
+[node name="Control" parent="." instance=ExtResource("8_vyb3e")]
+
+[node name="CanvasLayer" parent="." instance=ExtResource("12_0ttc2")]

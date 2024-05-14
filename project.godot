@@ -19,6 +19,11 @@ config/icon="res://imatges/icon.svg"
 
 Global="*res://Escenes/global.gd"
 
+[display]
+
+window/size/mode=3
+window/stretch/mode="viewport"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/kenny_spritesheet_importer/plugin.cfg")
