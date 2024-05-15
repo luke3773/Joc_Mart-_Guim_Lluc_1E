@@ -37,9 +37,8 @@ el policia.
 pugui arribar al garatge.
 - Si el lladre surt del camp de visió del policia, la
 partida s'acaba i guanya el lladre.
-- Passeu per sobre de les fletxes grogues per
-obtenir més velocitati eviteu els plàtans si no voleu
-frenar!"
+- Si voleu anar més ràpid, passeu per sobre de 
+les línies grogues!"
 
 [node name="Label2" type="Label" parent="."]
 offset_left = 396.0

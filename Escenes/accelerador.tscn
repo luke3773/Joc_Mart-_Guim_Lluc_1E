@@ -4,19 +4,22 @@
 [ext_resource type="Script" path="res://Escenes/accelerador.gd" id="1_sthpi"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6rmsn"]
-radius = 52.9778
-height = 172.167
+radius = 51.1019
+height = 171.48
 
 [node name="Area2D" type="Area2D"]
 rotation = 1.0472
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.35, 0.35)
 collision_layer = 3
 collision_mask = 3
 script = ExtResource("1_sthpi")
 
 [node name="ArrowYellow" type="Sprite2D" parent="."]
+scale = Vector2(0.35, 0.35)
 texture = ExtResource("1_g0krb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.522898, 1.95146)
 rotation = 1.55509
+scale = Vector2(0.35, 0.35)
 shape = SubResource("CapsuleShape2D_6rmsn")

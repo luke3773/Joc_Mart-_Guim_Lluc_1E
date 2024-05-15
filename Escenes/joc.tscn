@@ -26,110 +26,77 @@ position = Vector2(1500, 394)
 script = ExtResource("3_gbxa7")
 
 [node name="Marker2D" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
-position = Vector2(-1218, 110)
+position = Vector2(-1214, 113)
 
 [node name="Marker2D2" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
-position = Vector2(-149, -87)
+position = Vector2(-153, -87)
 
 [node name="Marker2D3" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
-position = Vector2(-542, -1152)
+position = Vector2(-579, -1130)
 
 [node name="Marker2D4" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
-position = Vector2(-648, -507)
+position = Vector2(-614, -518)
 
 [node name="Marker2D5" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
 position = Vector2(421, -704)
 
 [node name="Marker2D6" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
-position = Vector2(491, -1348)
+position = Vector2(434, -1309)
 
 [node name="Marker2D7" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
-position = Vector2(52, -1583)
+position = Vector2(-25, -1540)
 
 [node name="Marker2D8" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
-position = Vector2(1753, -1048)
+position = Vector2(1752, -1042)
 
 [node name="Marker2D9" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
-position = Vector2(799, -2830)
+position = Vector2(1134, -2779)
+
+[node name="Marker2D23" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
+position = Vector2(284, -2816)
 
 [node name="Marker2D10" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
-position = Vector2(556, -2185)
+position = Vector2(484, -2122)
 
 [node name="Marker2D11" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
-position = Vector2(1691, -2397)
+position = Vector2(1930, -2381)
+
+[node name="Marker2D18" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
+position = Vector2(1020, -1995)
+
+[node name="Marker2D19" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
+position = Vector2(1549, -1936)
+
+[node name="Marker2D20" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
+position = Vector2(1304, -1340)
 
 [node name="Marker2D12" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
-position = Vector2(2068, -2643)
+position = Vector2(2016, -2628)
 
 [node name="Marker2D13" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
-position = Vector2(2759, -1735)
+position = Vector2(2859, -1728)
 
 [node name="Marker2D14" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
-position = Vector2(2598, -2851)
+position = Vector2(2545, -3021)
 
 [node name="Marker2D15" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
 position = Vector2(2194, -2140)
 
 [node name="Marker2D16" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
-position = Vector2(3329, -2352)
+position = Vector2(2941, -2757)
 
 [node name="Marker2D17" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
 position = Vector2(3531, -2663)
 
+[node name="Marker2D21" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
+position = Vector2(3734, -3023)
+
+[node name="Marker2D22" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
+position = Vector2(3731, -3282)
+
 [node name="Punts_frenar" type="Node2D" parent="MapaDefinitiu"]
 position = Vector2(1500, 394)
 script = ExtResource("4_w4pdh")
-
-[node name="Marker2D" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
-position = Vector2(-986, -262)
-
-[node name="Marker2D2" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
-position = Vector2(-81, -507)
-
-[node name="Marker2D3" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
-position = Vector2(1706, -544)
-
-[node name="Marker2D4" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
-position = Vector2(-416, -879)
-
-[node name="Marker2D5" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
-position = Vector2(721, -1048)
-
-[node name="Marker2D6" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
-position = Vector2(811, -1736)
-
-[node name="Marker2D7" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
-position = Vector2(1232, -1323)
-
-[node name="Marker2D8" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
-position = Vector2(1353, -2152)
-
-[node name="Marker2D9" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
-position = Vector2(1031, -3202)
-
-[node name="Marker2D10" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
-position = Vector2(788, -2557)
-
-[node name="Marker2D11" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
-position = Vector2(1715, -2793)
-
-[node name="Marker2D12" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
-position = Vector2(2664, -3083)
-
-[node name="Marker2D13" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
-position = Vector2(2639, -2179)
-
-[node name="Marker2D14" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
-position = Vector2(3718, -3307)
-
-[node name="Marker2D15" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
-position = Vector2(2426, -2512)
-
-[node name="Marker2D16" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
-position = Vector2(3157, -2852)
-
-[node name="Marker2D17" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
-position = Vector2(3763, -3035)
 
 [node name="powerups" type="Node2D" parent="."]
 
