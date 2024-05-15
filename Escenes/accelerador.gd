@@ -13,7 +13,7 @@ func _process(delta):
 
 func _on_body_entered(body):
 	if body.type == 'lladre' or body.type == 'poli':
-		body.velocity *= 1.5
+		body.velocity *= 1.35
 		var llista_punts : Array[Node] = Global.Punts_a.get_children()
 		var nombre_punts = llista_punts.size()
 		
