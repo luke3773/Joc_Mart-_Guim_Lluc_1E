@@ -1,8 +1,38 @@
 extends Node2D
 
+var max_powerups = 17
 
-# Called when the node enters the scene tree for the first time.
+
+func collocar_powerups_a():
+	
+	for i in max_powerups:
+		
+		var powerup = $powerups/accelerador.duplicate()
+		$powerups.add_child(powerup)
+		var llista_punts : Array[Node] = Global.Punts_a.get_children()
+		var nombre_punts = llista_punts.size()
+		
+		powerup.global_position = llista_punts[randi_range(0, nombre_punts-1)].global_position
+
+func collocar_powerups_f():
+	
+	for i in max_powerups:
+		
+		var powerup = $powerups/frenador.duplicate()
+		$powerups.add_child(powerup)
+		var llista_punts : Array[Node] = Global.Punts_f.get_children()
+		var nombre_punts = llista_punts.size()
+		
+		powerup.global_position = llista_punts[randi_range(0, nombre_punts-1)].global_position
+
+	
+
 func _ready():
+
+		
+	collocar_powerups_a()
+	collocar_powerups_f()
+	
 	$camera_multiple.add_target($lladre)
 	$camera_multiple.add_target($policia)
 	

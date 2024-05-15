@@ -1,6 +1,8 @@
 extends Node
 
-var Punts:Node2D
+var Punts_a:Node2D
+var Punts_f:Node2D
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.

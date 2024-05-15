@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://bno38xu6pw1yj"]
+[gd_scene load_steps=26 format=3 uid="uid://bno38xu6pw1yj"]
 
 [ext_resource type="Script" path="res://Escenes/lladre.gd" id="1_dgc01"]
 [ext_resource type="Texture2D" uid="uid://b5yuf88l4ekal" path="res://imatges/fletxa_provisional.png" id="2_dfipn"]
@@ -215,6 +215,18 @@ tracks/2/keys = {
 "update": 0,
 "values": [Vector2(-12, 10)]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
 
 [sub_resource type="Animation" id="Animation_auiyc"]
 resource_name = "S"
@@ -376,6 +388,22 @@ tracks/2/keys = {
 "values": [Vector2(12, 0)]
 }
 
+[sub_resource type="Animation" id="Animation_0yeb0"]
+resource_name = "rotació"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 6.28319]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_f62uh"]
 _data = {
 "E": SubResource("Animation_85y18"),
@@ -386,7 +414,8 @@ _data = {
 "S": SubResource("Animation_auiyc"),
 "SE": SubResource("Animation_wajlr"),
 "SW": SubResource("Animation_jddks"),
-"W": SubResource("Animation_op0vi")
+"W": SubResource("Animation_op0vi"),
+"rotació": SubResource("Animation_0yeb0")
 }
 
 [node name="lladre" type="CharacterBody2D"]

@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://divt41g24bu0m"]
+
+[ext_resource type="Script" path="res://Escenes/frenador.gd" id="1_ifex6"]
+[ext_resource type="Texture2D" uid="uid://c107bn4xg5tl" path="res://imatges/—Pngtree—original simple oil stain illustration_5767880.png" id="2_1ugyf"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6rmsn"]
+radius = 52.9778
+height = 172.167
+
+[node name="Area2D" type="Area2D"]
+scale = Vector2(0.2, 0.2)
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_ifex6")
+
+[node name="ArrowYellow" type="Sprite2D" parent="."]
+light_mask = 3
+visibility_layer = 3
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_1ugyf")
+region_rect = Rect2(0, 0, 360, 360)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.55509
+shape = SubResource("CapsuleShape2D_6rmsn")

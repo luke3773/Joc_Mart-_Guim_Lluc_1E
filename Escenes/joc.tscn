@@ -1,9 +1,12 @@
-[gd_scene load_steps=12 format=3 uid="uid://diiiaqqe5hyxn"]
+[gd_scene load_steps=15 format=3 uid="uid://diiiaqqe5hyxn"]
 
 [ext_resource type="Script" path="res://Escenes/joc.gd" id="1_as7km"]
 [ext_resource type="PackedScene" uid="uid://cvionj5bjd3gm" path="res://Escenes/MapaDefinitiu.tscn" id="2_3oqj6"]
 [ext_resource type="PackedScene" uid="uid://bno38xu6pw1yj" path="res://Escenes/lladre.tscn" id="2_assmv"]
 [ext_resource type="Script" path="res://Escenes/Punts.gd" id="3_gbxa7"]
+[ext_resource type="PackedScene" uid="uid://pdy584isvgtm" path="res://Escenes/accelerador.tscn" id="4_dfl5a"]
+[ext_resource type="Script" path="res://Escenes/Punts_frenar.gd" id="4_w4pdh"]
+[ext_resource type="PackedScene" uid="uid://divt41g24bu0m" path="res://Escenes/frenador.tscn" id="5_3y3bp"]
 [ext_resource type="PackedScene" uid="uid://dy3rg8tjattga" path="res://Escenes/camera_2d.tscn" id="5_me3fj"]
 [ext_resource type="PackedScene" uid="uid://btoypfy6ydt34" path="res://Escenes/Area_final.tscn" id="7_b182x"]
 [ext_resource type="PackedScene" uid="uid://qu8y3g660l8f" path="res://Escenes/policia.tscn" id="7_l5fy0"]
@@ -18,18 +21,123 @@ script = ExtResource("1_as7km")
 [node name="MapaDefinitiu" parent="." instance=ExtResource("2_3oqj6")]
 position = Vector2(374, -789)
 
-[node name="Punts" type="Node2D" parent="MapaDefinitiu"]
+[node name="Punts_accelerar" type="Node2D" parent="MapaDefinitiu"]
 position = Vector2(1500, 394)
 script = ExtResource("3_gbxa7")
 
-[node name="Marker2D" type="Marker2D" parent="MapaDefinitiu/Punts"]
+[node name="Marker2D" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
 position = Vector2(-1218, 110)
 
-[node name="Marker2D2" type="Marker2D" parent="MapaDefinitiu/Punts"]
+[node name="Marker2D2" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
 position = Vector2(-149, -87)
 
-[node name="Marker2D3" type="Marker2D" parent="MapaDefinitiu/Punts"]
-position = Vector2(-549, -553)
+[node name="Marker2D3" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
+position = Vector2(-542, -1152)
+
+[node name="Marker2D4" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
+position = Vector2(-648, -507)
+
+[node name="Marker2D5" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
+position = Vector2(421, -704)
+
+[node name="Marker2D6" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
+position = Vector2(491, -1348)
+
+[node name="Marker2D7" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
+position = Vector2(52, -1583)
+
+[node name="Marker2D8" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
+position = Vector2(1753, -1048)
+
+[node name="Marker2D9" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
+position = Vector2(799, -2830)
+
+[node name="Marker2D10" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
+position = Vector2(556, -2185)
+
+[node name="Marker2D11" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
+position = Vector2(1691, -2397)
+
+[node name="Marker2D12" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
+position = Vector2(2068, -2643)
+
+[node name="Marker2D13" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
+position = Vector2(2759, -1735)
+
+[node name="Marker2D14" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
+position = Vector2(2598, -2851)
+
+[node name="Marker2D15" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
+position = Vector2(2194, -2140)
+
+[node name="Marker2D16" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
+position = Vector2(3329, -2352)
+
+[node name="Marker2D17" type="Marker2D" parent="MapaDefinitiu/Punts_accelerar"]
+position = Vector2(3531, -2663)
+
+[node name="Punts_frenar" type="Node2D" parent="MapaDefinitiu"]
+position = Vector2(1500, 394)
+script = ExtResource("4_w4pdh")
+
+[node name="Marker2D" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
+position = Vector2(-986, -262)
+
+[node name="Marker2D2" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
+position = Vector2(-81, -507)
+
+[node name="Marker2D3" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
+position = Vector2(1706, -544)
+
+[node name="Marker2D4" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
+position = Vector2(-416, -879)
+
+[node name="Marker2D5" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
+position = Vector2(721, -1048)
+
+[node name="Marker2D6" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
+position = Vector2(811, -1736)
+
+[node name="Marker2D7" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
+position = Vector2(1232, -1323)
+
+[node name="Marker2D8" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
+position = Vector2(1353, -2152)
+
+[node name="Marker2D9" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
+position = Vector2(1031, -3202)
+
+[node name="Marker2D10" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
+position = Vector2(788, -2557)
+
+[node name="Marker2D11" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
+position = Vector2(1715, -2793)
+
+[node name="Marker2D12" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
+position = Vector2(2664, -3083)
+
+[node name="Marker2D13" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
+position = Vector2(2639, -2179)
+
+[node name="Marker2D14" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
+position = Vector2(3718, -3307)
+
+[node name="Marker2D15" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
+position = Vector2(2426, -2512)
+
+[node name="Marker2D16" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
+position = Vector2(3157, -2852)
+
+[node name="Marker2D17" type="Marker2D" parent="MapaDefinitiu/Punts_frenar"]
+position = Vector2(3763, -3035)
+
+[node name="powerups" type="Node2D" parent="."]
+
+[node name="accelerador" parent="powerups" instance=ExtResource("4_dfl5a")]
+position = Vector2(-585, 768)
+
+[node name="frenador" parent="powerups" instance=ExtResource("5_3y3bp")]
+position = Vector2(-930, 654)
 
 [node name="areafinal" parent="." instance=ExtResource("7_b182x")]
 position = Vector2(6219, -3847)
@@ -61,3 +169,5 @@ autoplay = true
 [node name="Control" parent="." instance=ExtResource("8_vyb3e")]
 
 [node name="MenuPausa" parent="." instance=ExtResource("9_5anjm")]
+
+[connection signal="body_entered" from="powerups/accelerador" to="powerups/accelerador" method="_on_body_entered"]

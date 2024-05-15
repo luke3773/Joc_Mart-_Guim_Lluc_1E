@@ -1,0 +1,107 @@
+[gd_scene load_steps=12 format=3 uid="uid://diiiaqqe5hyxn"]
+
+[ext_resource type="Script" path="res://Escenes/joc.gd" id="1_as7km"]
+[ext_resource type="PackedScene" uid="uid://cvionj5bjd3gm" path="res://Escenes/MapaDefinitiu.tscn" id="2_3oqj6"]
+[ext_resource type="PackedScene" uid="uid://bno38xu6pw1yj" path="res://Escenes/lladre.tscn" id="2_assmv"]
+[ext_resource type="Script" path="res://Escenes/Punts.gd" id="3_gbxa7"]
+[ext_resource type="PackedScene" uid="uid://dy3rg8tjattga" path="res://Escenes/camera_2d.tscn" id="5_me3fj"]
+[ext_resource type="PackedScene" uid="uid://btoypfy6ydt34" path="res://Escenes/Area_final.tscn" id="7_b182x"]
+[ext_resource type="PackedScene" uid="uid://qu8y3g660l8f" path="res://Escenes/policia.tscn" id="7_l5fy0"]
+[ext_resource type="PackedScene" uid="uid://cdpa6cjjidvq6" path="res://Escenes/UI inicial.tscn" id="8_vyb3e"]
+[ext_resource type="PackedScene" uid="uid://bjhn1jmpclpww" path="res://Escenes/MenuPausa.tscn" id="9_5anjm"]
+[ext_resource type="AudioStream" uid="uid://ivaw4d7qiyap" path="res://musica_fons.mp3" id="10_wikiw"]
+[ext_resource type="PackedScene" uid="uid://7t5mxsiuw6it" path="res://Escenes/Esc_canvas.tscn" id="12_0ttc2"]
+
+[node name="joc" type="Node2D"]
+script = ExtResource("1_as7km")
+
+[node name="MapaDefinitiu" parent="." instance=ExtResource("2_3oqj6")]
+position = Vector2(374, -789)
+
+[node name="Punts" type="Node2D" parent="MapaDefinitiu"]
+position = Vector2(1500, 394)
+script = ExtResource("3_gbxa7")
+
+[node name="Marker2D" type="Marker2D" parent="MapaDefinitiu/Punts"]
+position = Vector2(-1218, 110)
+
+[node name="Marker2D2" type="Marker2D" parent="MapaDefinitiu/Punts"]
+position = Vector2(-149, -87)
+
+[node name="Marker2D3" type="Marker2D" parent="MapaDefinitiu/Punts"]
+position = Vector2(-542, -1152)
+
+[node name="Marker2D4" type="Marker2D" parent="MapaDefinitiu/Punts"]
+position = Vector2(-648, -507)
+
+[node name="Marker2D5" type="Marker2D" parent="MapaDefinitiu/Punts"]
+position = Vector2(421, -704)
+
+[node name="Marker2D6" type="Marker2D" parent="MapaDefinitiu/Punts"]
+position = Vector2(491, -1348)
+
+[node name="Marker2D7" type="Marker2D" parent="MapaDefinitiu/Punts"]
+position = Vector2(52, -1583)
+
+[node name="Marker2D8" type="Marker2D" parent="MapaDefinitiu/Punts"]
+position = Vector2(1121, -1780)
+
+[node name="Marker2D9" type="Marker2D" parent="MapaDefinitiu/Punts"]
+position = Vector2(799, -2830)
+
+[node name="Marker2D10" type="Marker2D" parent="MapaDefinitiu/Punts"]
+position = Vector2(556, -2185)
+
+[node name="Marker2D11" type="Marker2D" parent="MapaDefinitiu/Punts"]
+position = Vector2(1691, -2397)
+
+[node name="Marker2D12" type="Marker2D" parent="MapaDefinitiu/Punts"]
+position = Vector2(2068, -2643)
+
+[node name="Marker2D13" type="Marker2D" parent="MapaDefinitiu/Punts"]
+position = Vector2(2759, -1735)
+
+[node name="Marker2D14" type="Marker2D" parent="MapaDefinitiu/Punts"]
+position = Vector2(2598, -2851)
+
+[node name="Marker2D15" type="Marker2D" parent="MapaDefinitiu/Punts"]
+position = Vector2(2194, -2140)
+
+[node name="Marker2D16" type="Marker2D" parent="MapaDefinitiu/Punts"]
+position = Vector2(3329, -2352)
+
+[node name="Marker2D17" type="Marker2D" parent="MapaDefinitiu/Punts"]
+position = Vector2(3706, -2598)
+
+[node name="areafinal" parent="." instance=ExtResource("7_b182x")]
+position = Vector2(6219, -3847)
+scale = Vector2(0.3, 0.3)
+
+[node name="lladre" parent="." instance=ExtResource("2_assmv")]
+position = Vector2(-61, 80)
+
+[node name="policia" parent="." node_paths=PackedStringArray("lladre") instance=ExtResource("7_l5fy0")]
+position = Vector2(-323, 213)
+lladre = NodePath("../lladre")
+
+[node name="camera_multiple" parent="." instance=ExtResource("5_me3fj")]
+editor_draw_limits = true
+editor_draw_drag_margin = true
+move_speed = 0.5
+zoom_speed = 1.0
+min_zoom = 1.5
+max_zoom = 100.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("10_wikiw")
+volume_db = -10.0
+autoplay = true
+
+[node name="CanvasLayer" parent="." instance=ExtResource("12_0ttc2")]
+
+[node name="Control" parent="." instance=ExtResource("8_vyb3e")]
+
+[node name="MenuPausa" parent="." instance=ExtResource("9_5anjm")]
+
+[node name="powerups" type="Node2D" parent="."]
