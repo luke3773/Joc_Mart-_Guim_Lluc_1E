@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://bwhimv2jr44qn" path="res://imatges/Lladre/carSilver6_002.png" id="9_bg86x"]
 [ext_resource type="Texture2D" uid="uid://jy23gc7q8ecm" path="res://imatges/Lladre/carSilver6_003.png" id="10_g82x8"]
 [ext_resource type="PackedScene" uid="uid://de0codsgko7oy" path="res://Escenes/trail.tscn" id="11_lmyrt"]
-[ext_resource type="AudioStream" uid="uid://26swj6h1ki48" path="res://401556__giocosound__sfx_car_engine_outside_rpmlow.wav" id="12_wb8ta"]
+[ext_resource type="AudioStream" uid="uid://cwqhngexnm5uq" path="res://accfinal.wav" id="12_g6j5b"]
 [ext_resource type="PackedScene" uid="uid://clwvghqtwirgo" path="res://Escenes/areapoli.tscn" id="13_2cv80"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x4p0f"]
@@ -449,7 +449,7 @@ libraries = {
 [node name="accelerador_time" type="Timer" parent="."]
 
 [node name="acc" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("12_wb8ta")
+stream = ExtResource("12_g6j5b")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 

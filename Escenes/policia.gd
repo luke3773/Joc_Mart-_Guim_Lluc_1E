@@ -57,7 +57,7 @@ func _process(delta):
 	var sound_db = velocity.length() / max_vel * 9
 	$acc_p.set_volume_db(sound_db)
 	
-	if $acc_p.is_playing() == false:
+	if $acc_p.is_playing() == false and velocity.length() > 0:
 		$acc_p.play()
 	
 	var angle = direccio.angle()
